@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/3.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
-
+import os
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -37,6 +37,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.sites',
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
 ]
 
 MIDDLEWARE = [
@@ -59,13 +63,40 @@ TEMPLATES = [
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
-                'django.template.context_processors.request',
+                'django.template.context_processors.request', # required by allauth  # noqa
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
             ],
         },
     },
 ]
+
+AUTHENTICATION_BACKENDS = [
+
+    # Needed to login by username in Django admin, regardless of `allauth`
+    'django.contrib.auth.backends.ModelBackend',
+
+    # `allauth` specific authentication methods, such as login by email
+    'allauth.account.auth_backends.AuthenticationBackend',
+
+]
+
+SITE_ID = 1
+
+"""
+Requirements for email registration
+
+"""
+EMAIL_BACKEND = 'django.core.mail.backend.console.EmailBackend'
+
+ACCOUNT_AUTHENTICATION_METHOD = 'user.email' # tells allauth what we want to allow - username or email
+ACCOUNT_EMAIL_REQUIRED = True  # email is required to register to the site
+ACCOUNT_EMAIL_VERIFICATION = 'mandatory'   # verification is mandatory so users emails are real
+ACCOUNT_SIGNUP_EMAIL_ENTER_TWICE = True   # have to add twice
+ACCOUNT_USERNAME_MIN_LENGTH = 4    # must have min 4 characters
+LOGIN_URL = '/accounts/login/'   # specifying login url and and url to redirect back after logging in.
+LOGIN_REDIRECT_URL = '/'  # home
+
 
 WSGI_APPLICATION = 'native_spirit_studio.wsgi.application'
 
