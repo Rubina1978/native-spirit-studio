@@ -89,7 +89,7 @@ Requirements for email registration
 """
 EMAIL_BACKEND = 'django.core.mail.backend.console.EmailBackend'
 
-ACCOUNT_AUTHENTICATION_METHOD = 'user.email' # tells allauth what we want to allow - username or email
+ACCOUNT_AUTHENTICATION_METHOD = 'username_email' # tells allauth what we want to allow - username or email
 ACCOUNT_EMAIL_REQUIRED = True  # email is required to register to the site
 ACCOUNT_EMAIL_VERIFICATION = 'mandatory'   # verification is mandatory so users emails are real
 ACCOUNT_SIGNUP_EMAIL_ENTER_TWICE = True   # have to add twice
