@@ -41,7 +41,8 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
-    'home'
+    'home',
+    'products',
 ]
 
 MIDDLEWARE = [
@@ -93,7 +94,7 @@ Requirements for email registration
 """
 EMAIL_BACKEND = 'django.core.mail.backend.console.EmailBackend'
 
-ACCOUNT_AUTHENTICATION_METHOD = 'username_email' # tells allauth what we want to allow - username or email
+ACCOUNT_AUTHENTICATION_METHOD = 'username_email'     # tells allauth what we want to allow - username or email
 ACCOUNT_EMAIL_REQUIRED = True  # email is required to register to the site
 ACCOUNT_EMAIL_VERIFICATION = 'mandatory'   # verification is mandatory so users emails are real
 ACCOUNT_SIGNUP_EMAIL_ENTER_TWICE = True   # have to add twice
@@ -121,16 +122,16 @@ DATABASES = {
 
 AUTH_PASSWORD_VALIDATORS = [
     {
-        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
+        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',     # noqa
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
+        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',      # noqa
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
+        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',      # noqa
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
+        'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',    # noqa
     },
 ]
 

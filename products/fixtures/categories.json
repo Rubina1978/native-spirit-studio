@@ -1,0 +1,28 @@
+
+[
+    {
+        "model": "products.category",
+        "pk": 1,
+        "fields": {
+            "name":"jewellery",
+            "friendly_name": "Jewellery"
+        }
+    },
+    {
+        "model": "products.category",
+        "pk": 2,
+        "fields": {
+            "name": "home_decor",
+            "friendly_name": "Home & Decor"
+        }
+    },
+      {
+        "model": "products.category",
+        "pk": 3,
+        "fields": {
+            "name": "wellness",
+            "friendly_name": "Wellness"
+        }
+    }
+
+]
