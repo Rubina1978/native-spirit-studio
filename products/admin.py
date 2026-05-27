@@ -3,8 +3,6 @@ from .models import Product, Category
 
 # Register your models here.
 
-ordering = ('sku',)
-
 
 class ProductAdmin(admin.ModelAdmin):
     list_display = (
@@ -15,6 +13,9 @@ class ProductAdmin(admin.ModelAdmin):
         'rating',
         'image'
     )
+
+
+ordering = ('sku',)
 
 
 class CategoryAdmin(admin.ModelAdmin,):
