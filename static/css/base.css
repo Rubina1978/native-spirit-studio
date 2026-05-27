@@ -5,7 +5,7 @@ body {
     background: url('/media/spiritual-wolf.png') no-repeat center center fixed;
     background-size: cover;
     height:calc(100vh - 164px);
-    color: #fff;
+    color: #181010;
     font-family: 'Lato', sans-serif;
 }
 .hero-text {
@@ -13,6 +13,9 @@ body {
     text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
 }
 .product-text {
+    color: black;
+}
+p {
     color: black;
 }
 
@@ -120,5 +123,16 @@ body {
 
     .header-container {
         padding-top: 164px;
+    }
+}
+
+/* pad the top when navbar is collapsed on mobile*/
+@media (max-width: 991px){
+    .header-container{
+        padding-top: 116px;
+    }
+
+    body {
+        height:calc(100vh - 116px);
     }
 }
