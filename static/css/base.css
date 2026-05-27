@@ -66,6 +66,14 @@ body {
     color: white;
 }
 
+.product-image {
+    width: 100%;
+    max-width: 280px;
+    height: 280px;
+    object-fit: cover;
+    display: block;
+}
+
 .text-black {
     color: #000 !important;
 }
