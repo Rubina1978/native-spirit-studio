@@ -46,7 +46,7 @@
             "name": "Beaded Geometric Bracelet",
             "description": "Beautiful colorful beadwork bracelet with geometric patterns, turquoise and coral accents, leather cord",
             "price": "19.99",
-            "category": 1,
+            "category": 2,
             "rating": 4.6,
             "image": "bracelet1.jpg"
     }
@@ -59,7 +59,7 @@
             "name": "Boho Style Bracelet",
             "description": "Boho style beautiful layered designs bracelet with colorful beads, natural stones, tassels, and earthy tones",
             "price": "29.99",
-            "category": 1,
+            "category": 2,
             "rating": 4.9,
             "image": "bracelet2.jpg" 
     }
@@ -73,7 +73,7 @@
             "name": "Turquoise Stones Necklace",
             "description": "Turquose Stone necklace, vibrant color and stylish",
             "price": "32.99",
-            "category": 1,
+            "category": 3,
             "rating": 4.7,
             "image": "necklace2.jpg" 
     }
@@ -86,7 +86,7 @@
             "name": "Colorful Necklace",
             "description": "single-strand necklace with colorful natural gemstones including turquoise, coral, amethyst, and various beads in a bohemian style",
             "price": "45.99",
-            "category": 1,
+            "category": 3,
             "rating": 4.8,
             "image": "necklace3.jpg" 
     }
@@ -99,7 +99,7 @@
             "name": "Boho Style Multi-strand Necklace",
             "description": "Layered necklace with natural stones and colorful beads",
             "price": "49.99",
-            "category": 1,
+            "category": 3,
             "rating": 4.8,
             "image": "necklace4.jpg" 
     }
@@ -112,7 +112,7 @@
             "name": "Night Wolves Blanket",
             "description": "Wolfs calling to the Moon, black and white design soft and warm, light blanket, washable, fleece material King: 230 x 270 cm, Double: 215 x 228, Single: 165 x 228",
             "price": "25.99",
-            "category": 2,
+            "category": 5,
             "rating": 4.5,
             "image": "blanket1.jpg" 
         }
@@ -125,7 +125,7 @@
             "name": "Eagles Print Blanket",
             "description": "Eagles print blanket, soft and warm, washable, King: 230 x 270 cm, Double: 215 x 228, Single: 165 x 228",
             "price": "29.99",
-            "category": 2,
+            "category": 5,
             "rating": 4.8,
             "image": "blanket2.jpg"
         }
@@ -138,7 +138,7 @@
             "name": "Earth Blanket",
             "description": "Beautiful blanket with bohemian patterns with macrame fringe and tassels in earthy tones including cream, terracotta, mustard, and sage green. King: 230 x 270 cm, Double: 215 x 228, Single: 165 x 228",
             "price": "29.99",
-            "category": 2,
+            "category": 5,
             "rating": 4.6,
             "image": "blanket4.jpg"
         }
@@ -151,7 +151,7 @@
             "name": "Cotton Blanket",
             "description": "Cotton beautiful blanket with geometric tribal designs in various vibrant colors including turquoise, coral, yellow, navy, and cream tones. King: 230 x 270 cm, Double: 215 x 228, Single: 165 x 228",
             "price": "49.99",
-            "category": 2,
+            "category": 5,
             "rating": 4.6,
             "image": "blanket3.jpg"
         }
@@ -165,7 +165,7 @@
             "name": "Dreamcatcher",
             "description": "dreamcatcher with intricate webbing, feathers, and beads",
             "price": "10.99",
-            "category": 2,
+            "category": 4,
             "rating": 4.3,
             "image": "dreamcatcher1.jpg"
         }
@@ -179,7 +179,7 @@
             "name": "Double Webb Dreamcatcher",
             "description": "dreamcatcher with intricatedouble webbing rings, feathers, and beads",
             "price": "4.99",
-            "category": 2,
+            "category": 4,
             "rating": 4.4,
             "image": "dreamcatcher2.jpg"
         }
@@ -193,7 +193,7 @@
             "name": "Wolf Night Rug",
             "description": "Fantasy night rug, mystical scenes with wolves and big cats in nighttime forest settings with full moons, starry skies, and ethereal lighting in deep blues, purples, and silver tones. Dimensions: 200 x 290 cm, 185 x 275 cm, 150 x 215 cm",
             "price": "36.99",
-            "category": 2,
+            "category": 6,
             "rating": 4.9,
             "image": "rug1.jpg"
         }
@@ -207,7 +207,7 @@
             "name": "Mystical Waterfall Rug",
             "description": "Mystical waterfall rug,enchanted cascading waterfalls with lush forests, ethereal lighting, vibrant turquoise water.  Dimensions: 200 x 290 cm, 185 x 275 cm, 150 x 215 cm",
             "price": "36.99",
-            "category": 2,
+            "category": 6,
             "rating": 4.9,
             "image": "rug2.jpg"
         }
@@ -221,8 +221,8 @@
             "name": "Geometric Print Rug",
             "description": "Black and white geometric paterns rug. Dimensions: 200 x 290 cm, 185 x 275 cm, 150 x 215 cm",
             "price": "25.99",
-            "category": 2,
-            "rating": 4.5,
+            "category": 6,
+            "rating": 4.6,
             "image": "rug5.jpg"
         }
 
@@ -235,7 +235,7 @@
             "name": "Decorative Light Background Candle",
             "description": "tribal style design candle, white with earthy geometric features",
             "price": "10.99",
-            "category": 3,
+            "category": 7,
             "rating": 4.7,
             "image": "candle1.jpg"
         }
@@ -249,7 +249,7 @@
             "name": "Decorative Candle in White Glass",
             "description": "Tribal style design candle in white clear glass",
             "price": "10.99",
-            "category": 3,
+            "category": 7,
             "rating": 4.7,
             "image": "candle2.jpg"
         }
@@ -263,7 +263,7 @@
             "name": "Decorative Candle in Dark Glass",
             "description": "Tribal style design candle in black glass",
             "price": "10.99",
-            "category": 3,
+            "category": 7,
             "rating": 4.7,
             "image": "candle3.jpg"
         }
@@ -277,7 +277,7 @@
             "name": "Natural wellbeing tea",
             "description": "Herbal tea for calm and happy mind",
             "price": "5.99",
-            "category": 3,
+            "category": 8,
             "rating": 4.7,
             "image": "tea2.jpg"
         }
@@ -291,7 +291,7 @@
             "name": "Herbal Tea Gift Box",
             "description": "Herbal tea gift box for calm and happy mind",
             "price": "9.99",
-            "category": 3,
+            "category": 8,
             "rating": 4.8,
             "image": "mindgullness-tea-giftbox.jpg"
         }
@@ -305,7 +305,7 @@
             "name": "Wellness Gift Box with Crystals",
             "description": "Wellness gift box with crystals - Amethyst, Rose  Quartz",
             "price": "19.99",
-            "category": 3,
+            "category": 9,
             "rating": 4.9,
             "image": "midfulness-giftbox1.jpg"
         }
@@ -319,7 +319,7 @@
             "name": "Wellness Gift Box with Crystals",
             "description": "Wellness gift box with crystals - Crystal Black Tourmaline",
             "price": "19.99",
-            "category": 3,
+            "category": 9,
             "rating": 4.9,
             "image": "midfulness-giftbox2.jpg"
         }

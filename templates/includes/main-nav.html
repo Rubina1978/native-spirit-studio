@@ -14,40 +14,40 @@
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="jewellery-link" data-toggle="dropdown" aria-haspopup"true" aria-expanded="false">
                 Jewellery</a>
             <div class="dropdown-menu border-0" aria-labelledby="jewellery-link">
-                <a href="" class="dropdown-item">Necklaces</a>
-                <a href="" class="dropdown-item">Bracelets</a>
-                <a href="" class="dropdown-item">Rings</a>
-                <a href="" class="dropdown-item">All jewellery</a>
+                <a href="{% url 'products' %}?category=necklaces" class="dropdown-item">Necklaces</a>
+                <a href="{% url 'products'%}?category=bracelets" class="dropdown-item">Bracelets</a>
+                <a href="{% url 'products' %}?category=rings" class="dropdown-item">Rings</a>
+                <a href="{% url 'products'%}?category=necklaces, bracelets, rings" class="dropdown-item">All jewellery</a>
             </div>
         </li>
         <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="home-decor-link" data-toggle="dropdown" aria-haspopup"true" aria-expanded="false">
                 Home & decor</a>
             <div class="dropdown-menu border-0" aria-labelledby="home-decor-link">
-                <a href="" class="dropdown-item">Dream Catchers</a>
-                <a href="" class="dropdown-item">Blankets</a>
-                <a href="" class="dropdown-item">Rugs</a>
-                <a href="" class="dropdown-item">All Home & Decore</a>
+                <a href="{% url 'products' %}?category=dreamcatchers" class="dropdown-item">Dream Catchers</a>
+                <a href="{% url 'products' %}?category=blankets" class="dropdown-item">Blankets</a>
+                <a href="{% url 'products' %}?category=rugs" class="dropdown-item">Rugs</a>
+                <a href="{% url 'products' %}?category=dreamcatchers, blankets, rugs" class="dropdown-item">All Home & Decore</a>
             </div>
         </li>
         <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="wellness-link" data-toggle="dropdown" aria-haspopup"true" aria-expanded="false">
                 Wellness</a>
             <div class="dropdown-menu border-0" aria-labelledby="wellness-link">
-                <a href="" class="dropdown-item">Teas</a>
-                <a href="" class="dropdown-item">Candles</a>
-                <a href="" class="dropdown-item">Wellness gift boxes</a>
-                <a href="" class="dropdown-item">All Wellness</a>
+                <a href="{% url 'products' %}?category=teas" class="dropdown-item">Teas</a>
+                <a href="{% url 'products' %}?category=candles" class="dropdown-item">Candles</a>
+                <a href="{% url 'products' %}?category=wellness_gift_boxes" class="dropdown-item">Wellness gift boxes</a>
+                <a href="{% url 'products' %}?category=teas, candles, wellness_gift_boxes" class="dropdown-item">All Wellness</a>
             </div>
         </li>
         <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="specials-link" data-toggle="dropdown" aria-haspopup"true" aria-expanded="false">
                 Special Offers</a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="" class="dropdown-item">New Arrivals</a>
-                <a href="" class="dropdown-item">Deals</a>
-                <a href="" class="dropdown-item">Clearance</a>
-                <a href="" class="dropdown-item">All Specials</a>
+                <a href="{% url 'products' %}?category=special_offers" class="dropdown-item">New Arrivals</a>
+                <a href="{% url 'products' %}?category=special_offers" class="dropdown-item">Deals</a>
+                <a href="{% url 'products' %}?category=clearance" class="dropdown-item">Clearance</a>
+                <a href="{% url 'products' %}?category=special_offers,clearance" class="dropdown-item">All Specials</a>
             </div>
         </li>
     </ul>

@@ -4,24 +4,96 @@
         "model": "products.category",
         "pk": 1,
         "fields": {
-            "name":"jewellery",
-            "friendly_name": "Jewellery"
+            "name":"rings",
+            "friendly_name": "Rings"
         }
     },
-    {
+      {
         "model": "products.category",
         "pk": 2,
         "fields": {
-            "name": "home_decor",
-            "friendly_name": "Home & Decor"
+            "name":"bracelets",
+            "friendly_name": "Bracelets"
         }
     },
       {
         "model": "products.category",
         "pk": 3,
         "fields": {
-            "name": "wellness",
-            "friendly_name": "Wellness"
+            "name":"necklaces",
+            "friendly_name": "Necklaces"
+        }
+    },
+      {
+        "model": "products.category",
+        "pk": 4,
+        "fields": {
+            "name":"dreamcatchers",
+            "friendly_name": "Dream Catchers"
+        }
+    },
+      {
+        "model": "products.category",
+        "pk": 5,
+        "fields": {
+            "name":"blankets",
+            "friendly_name": "Blankets"
+        }
+    },
+      {
+        "model": "products.category",
+        "pk": 6,
+        "fields": {
+            "name":"rugs",
+            "friendly_name": "Rugs"
+        }
+    },
+    {
+        "model": "products.category",
+        "pk": 7,
+        "fields": {
+            "name": "candles",
+            "friendly_name": "Candles"
+        }
+    },
+      {
+        "model": "products.category",
+        "pk": 8,
+        "fields": {
+            "name": "teas",
+            "friendly_name": "Teas"
+        }
+    },
+      {
+        "model": "products.category",
+        "pk": 9,
+        "fields": {
+            "name":"wellness_gift_boxes",
+            "friendly_name": "Wellness Gift Boxes"
+        }
+    },
+    {
+        "model": "products.category",
+        "pk": 10,
+        "fields": {
+            "name": "new_arrivals",
+            "friendly_name": "New Arrivals"
+        }
+    },
+    {
+        "model": "products.category",
+        "pk": 11,
+        "fields": {
+            "name": "deals",
+            "friendly_name": "Deals"
+        }
+    },
+    {
+        "model": "products.category",
+        "pk": 12,
+        "fields": {
+            "name": "clearance",
+            "friendly_name": "Clearance"
         }
     }
 
