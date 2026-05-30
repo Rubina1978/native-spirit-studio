@@ -72,13 +72,6 @@ p {
     color: white;
 }
 
-/* .product-image {
-    width: 100%;
-    max-width: 280px;
-    height: 280px;
-    object-fit: cover;
-    display: block;
-} */
 
 .text-black {
     color: #000 !important;
@@ -102,6 +95,22 @@ p {
     z-index: -1;
 }
 
+a.category-badge > span.badge:hover {
+    background: #212529 !important;
+    color: #fff !important;
+}
+
+.btt-button {
+    height: 30px;
+    width: 30px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.btt-link {
+    cursor: pointer;
+}
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
