@@ -72,7 +72,7 @@ TEMPLATES = [
                 'django.template.context_processors.request', # required by allauth  # noqa
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
-                'bag.contexts.bag.contents',
+                'bag.context.bag_contents',
             ],
         },
     },

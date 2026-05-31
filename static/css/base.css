@@ -85,6 +85,19 @@ p {
     background-color: #000 !important;
 }
 
+.btn-outline-black {
+    background: white;
+    color:black !important;  /*use important to  override link color for a elements*/
+    border: 1px solid black
+}
+
+.btn-outline-black:hover,
+.btn-outline-black:active,
+.btn-outline-black:focus {
+    background: black;
+    color: white !important;
+}
+
 .overlay { /* for product.html white background to cover the body's background picture*/
     height: 100%;
     width: 100%;
@@ -111,6 +124,7 @@ a.category-badge > span.badge:hover {
 .btt-link {
     cursor: pointer;
 }
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
