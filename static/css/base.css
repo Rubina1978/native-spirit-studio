@@ -113,6 +113,12 @@ a.category-badge > span.badge:hover {
     color: #fff !important;
 }
 
+.bag-image {
+    max-width: 120px;
+    max-height: 120px;
+    object-fit: cover;
+}
+
 .btt-button {
     height: 30px;
     width: 30px;
