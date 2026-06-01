@@ -74,7 +74,16 @@
                                 <div class="card-footer bg-white pt-0 border-0 text-left">
                                     <div class="row">
                                         <div class="col">
-                                            <p class="lead mb-0 text-left font-weight-bold">${{ product.price }}</p>
+                                            
+                                {% comment %}Initial development and implementation of the size logic done  with github copilot{% endcomment %}
+
+                                            <p class="lead mb-0 text-left font-weight-bold">
+                                                {% if product.has_size_variants %}
+                                                    From just ${{ product.get_lowest_size_price }}
+                                                {% else %}
+                                                    ${{ product.price }}
+                                                {% endif %}
+                                            </p>
                                             {% if product.category %}
                                             <p class="small mt-1 mb-0">
                                                 <a class="text-muted" href="{% url 'products' %}?category={{ product.category.name }}">

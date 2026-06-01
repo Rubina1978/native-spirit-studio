@@ -10,7 +10,9 @@ from .models import Product, Category
 def all_products(request, base_category=None):
     """ A view to show all products, including sorting and search queries """
 
-    products = Product.objects.all()
+    # github copilot assistance o modifying this function
+    
+    products = Product.objects.all().prefetch_related('sizes')
     query = None
     categories = None
     sort = None
@@ -41,9 +43,13 @@ def all_products(request, base_category=None):
         if 'q' in request.GET:
             query = request.GET['q']
             if not query:
-                messages.error(request, "You didn't enter any search criteria!")
+                messages.error(
+                    request, "You didn't enter any search criteria!"
+                )
                 return redirect(reverse('products'))
-            queries = Q(name__icontains=query) | Q(description__icontains=query)
+            queries = (
+                Q(name__icontains=query) | Q(description__icontains=query)
+            )
             products = products.filter(queries)
 
     current_sorting = f'{sort}_{direction}'
@@ -63,8 +69,19 @@ def product_detail(request, product_id):
 
     product = get_object_or_404(Product, pk=product_id)
 
+    # github copilot
+    size_categories = {'blankets', 'rugs'}
+    allow_sizes = bool(
+        product.has_sizes
+        and product.category
+        and product.category.name in size_categories
+    )
+    sizes = product.sizes.all() if allow_sizes else []
+
     context = {
         'product': product,
+        'sizes': sizes,
+        'allow_sizes': allow_sizes,
     }
 
     return render(request, 'products/product_detail.html', context)

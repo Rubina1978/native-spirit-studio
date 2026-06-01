@@ -1,7 +1,10 @@
 from django.contrib import admin
-from .models import Product, Category
+from .models import Product, Category, ProductSize
 
-# Register your models here.
+
+class ProductSizeInline(admin.TabularInline):
+    model = ProductSize
+    extra = 1
 
 
 class ProductAdmin(admin.ModelAdmin):
@@ -11,11 +14,14 @@ class ProductAdmin(admin.ModelAdmin):
         'category',
         'price',
         'rating',
+        'has_sizes',
+        'available_sizes',
+        'size',
         'image'
     )
 
-
-ordering = ('sku',)
+    ordering = ('sku',)
+    inlines = [ProductSizeInline]
 
 
 class CategoryAdmin(admin.ModelAdmin,):
@@ -25,5 +31,18 @@ class CategoryAdmin(admin.ModelAdmin,):
     )
 
 
+class ProductSizeAdmin(admin.ModelAdmin):
+    list_display = (
+        'product',
+        'label',
+        'sku',
+        'price',
+        'stock',
+    )
+    list_filter = ('product',)
+    search_fields = ('product__name', 'label', 'sku')
+
+
 admin.site.register(Product, ProductAdmin)
 admin.site.register(Category, CategoryAdmin)
+admin.site.register(ProductSize, ProductSizeAdmin)

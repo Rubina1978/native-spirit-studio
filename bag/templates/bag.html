@@ -46,12 +46,15 @@
                                 </td>
                                 <td class="py-3">
                                     <p class="my-0">{{ item.product.name }}</p>
+                                    {% if item.size %}
+                                        <p class="my-0 small text-muted">Size: {{ item.size.label }}</p>
+                                    {% endif %}
                                     {% if item.product.sku %}
                                         <p class="my-0 small text-muted">SKU: {{ item.product.sku|upper }}</p>
                                     {% endif %}
                                 </td>
                                 <td class="py-3">
-                                    <p class="my-0">${{ item.product.price|floatformat:2 }}</p>
+                                    <p class="my-0">${{ item.unit_price|floatformat:2 }}</p>
                                 </td>
                                 <td class="py-3">
                                     <p class="my-0">{{ item.quantity }}</p>

@@ -1,7 +1,7 @@
 from decimal import Decimal
 from django.conf import settings
 from django.shortcuts import get_object_or_404
-from products.models import Product
+from products.models import Product, ProductSize
 
 
 def bag_contents(request):
@@ -11,15 +11,33 @@ def bag_contents(request):
     product_count = 0
     bag = request.session.get('bag', {})
 
-    for item_id, quantity in bag.items():
-        product = get_object_or_404(Product, pk=item_id)
-        total += quantity * product.price
+    for item_key, quantity in bag.items():
+        if ':' in str(item_key):
+            pid, size_token = str(item_key).split(':', 1)
+            size_id = size_token.replace('size-', '')
+        else:
+            pid = item_key
+            size_id = None
+            
+    # Initial modification developed with assistance of github copilot
+
+        product = get_object_or_404(Product, pk=pid)
+        if size_id:
+            size = get_object_or_404(ProductSize, pk=size_id, product=product)
+            line_price = size.price
+        else:
+            size = None
+            line_price = product.price
+
+        total += quantity * line_price
         product_count += quantity
         bag_items.append({
-            'item_id': item_id,
+            'item_id': pid,
             'quantity': quantity,
             'product': product,
-            'total': quantity * product.price,
+            'size': size,
+            'unit_price': line_price,
+            'total': quantity * line_price,
 
         })
 
