@@ -11,6 +11,7 @@ def bag_contents(request):
     product_count = 0
     bag = request.session.get('bag', {})
 
+# Initial modification developed with assistance of github copilot
     for item_key, quantity in bag.items():
         if ':' in str(item_key):
             pid, size_token = str(item_key).split(':', 1)
@@ -18,8 +19,6 @@ def bag_contents(request):
         else:
             pid = item_key
             size_id = None
-            
-    # Initial modification developed with assistance of github copilot
 
         product = get_object_or_404(Product, pk=pid)
         if size_id:

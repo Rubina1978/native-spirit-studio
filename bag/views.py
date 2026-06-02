@@ -9,6 +9,8 @@ def view_bag(request):
 
     return render(request, 'bag.html')
 
+# modified with github copilot assistance to include size choice on items
+
 
 def add_to_bag(request, item_id):
     """ Add a quantity of the specified product to the shopping bag """
