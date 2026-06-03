@@ -1,4 +1,5 @@
-from django.shortcuts import render, redirect, get_object_or_404, reverse, HttpResponse
+from django.shortcuts import render, redirect, get_object_or_404
+from django.shortcuts import reverse, HttpResponse
 from products.models import ProductSize
 
 # Create your views here.
@@ -36,6 +37,7 @@ def add_to_bag(request, item_id):
 
     return redirect(redirect_url)
 
+# with ai help modified adjust and remove item in code to fit to my custom ProductSize model
 
 def adjust_bag(request, item_id):
 

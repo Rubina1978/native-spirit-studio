@@ -33,9 +33,9 @@
                     <p class="lead mb-0 text-left font-weight-bold">
     {% comment%}allow_sizes part developed and implemented with github copilot {%endcomment %}
                         {% if allow_sizes and sizes %}
-                            From ${{ product.get_lowest_size_price }}
+                            From £{{ product.get_lowest_size_price }}
                         {% else %}
-                            ${{ product.price }}
+                            £{{ product.price }}
                         {% endif %}
                     </p>
 
