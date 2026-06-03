@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect, get_object_or_404
+from django.shortcuts import render, redirect, get_object_or_404, reverse, HttpResponse
 from products.models import ProductSize
 
 # Create your views here.
@@ -9,8 +9,8 @@ def view_bag(request):
 
     return render(request, 'bag.html')
 
-# modified with github copilot assistance to include size choice on items
 
+# modified with github copilot assistance to include size choice on items
 
 def add_to_bag(request, item_id):
     """ Add a quantity of the specified product to the shopping bag """
@@ -35,3 +35,49 @@ def add_to_bag(request, item_id):
     request.session['bag'] = bag
 
     return redirect(redirect_url)
+
+
+def adjust_bag(request, item_id):
+
+    """ Adjust the quantity of the specified
+    product to the specified amount """
+
+    quantity = int(request.POST.get('quantity'))
+    size_id = request.POST.get('size_id')
+    bag = request.session.get('bag', {})
+
+    if size_id:
+        key = f"{item_id}:size-{size_id}"
+    else:
+        key = str(item_id)
+
+    if quantity > 0:
+        bag[key] = quantity
+    else:
+        bag.pop(key, None)
+
+    request.session['bag'] = bag
+    return redirect(reverse('view_bag'))
+
+
+def remove_from_bag(request, item_id):
+    """ Remove the item from shopping bag """
+
+    try:
+        bag = request.session.get('bag', {})
+        size_id = request.POST.get('size_id')
+
+        if size_id:
+            key = f"{item_id}:size-{size_id}"
+        else:
+            key = str(item_id)
+
+        bag.pop(key, None)
+
+        request.session['bag'] = bag
+
+        return HttpResponse(status=200)
+
+    except Exception as e:
+        print(e)
+        return HttpResponse(status=500)
