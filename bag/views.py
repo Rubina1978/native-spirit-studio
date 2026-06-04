@@ -32,14 +32,14 @@ def add_to_bag(request, item_id):
         bag[key] += quantity
     else:
         bag[key] = quantity
-        
-    messages.success(request, f'Added {product.name} to your bag')
-    print("MESSAGE TEST")
-    request.session['bag'] = bag
+        messages.success(request, f'Added {product.name} to your bag')
+        print("MESSAGE TEST")
 
+    request.session['bag'] = bag
     return redirect(redirect_url)
 
 # with ai help modified adjust and remove item in code to fit to my custom ProductSize model
+
 
 def adjust_bag(request, item_id):
 

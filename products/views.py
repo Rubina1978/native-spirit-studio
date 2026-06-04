@@ -11,7 +11,7 @@ def all_products(request, base_category=None):
     """ A view to show all products, including sorting and search queries """
 
     # github copilot assistance o modifying this function
-    
+
     products = Product.objects.all().prefetch_related('sizes')
     query = None
     categories = None
@@ -65,6 +65,7 @@ def all_products(request, base_category=None):
 
 
 def product_detail(request, product_id):
+    print("DEBUG product_id =", product_id)
     """ A view to show individual product details """
 
     product = get_object_or_404(Product, pk=product_id)
