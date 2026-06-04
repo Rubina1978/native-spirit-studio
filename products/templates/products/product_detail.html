@@ -62,7 +62,7 @@
                                 <div class="form-group w-50">
                                     <select name="size_id" class="custom-select rounded-0">
                                         {% for size in sizes %}
-                                            <option value="{{ size.id }}">{{ size.label }} - ${{ size.price|floatformat:2 }}</option>
+                                            <option value="{{ size.id }}">{{ size.label }} - £{{ size.price|floatformat:2 }}</option>
                                         {% endfor %}
                                     </select>
                                 </div>
