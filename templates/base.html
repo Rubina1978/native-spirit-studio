@@ -142,7 +142,12 @@
     {% block postloadjs %}
    
     <script type="text/javascript">
+        $('.toast').toast({
+            autohide: true,
+            delay: 2000
+        })
         $('.toast').toast('show');
+        
     </script>
     {% endblock %}
     

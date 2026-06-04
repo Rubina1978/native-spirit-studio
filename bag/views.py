@@ -25,7 +25,7 @@ def add_to_bag(request, item_id):
         size = get_object_or_404(ProductSize, pk=size_id, product_id=item_id)
         key = f"{item_id}:size-{size.id}"
         messages.success(request, f'Added {product.name} ({size.label})')
-        
+
     else:
         size = None
         key = str(item_id)
@@ -40,7 +40,8 @@ def add_to_bag(request, item_id):
     request.session['bag'] = bag
     return redirect(redirect_url)
 
-# with ai help modified adjust and remove item in code to fit to my custom ProductSize model
+# with ai help modified adjust and remove item in code to
+# fit to my custom ProductSize model
 
 
 def adjust_bag(request, item_id):
@@ -68,7 +69,7 @@ def adjust_bag(request, item_id):
         if size_id:
             messages.success(
                 request,
-                f'Updated quantity of {product.name} ({size.label}) to {quantity}'
+                f'Updated quantity of {product.name}({size.label}) to {quantity}'
             )
         else:
             messages.success(
@@ -91,22 +92,35 @@ def adjust_bag(request, item_id):
 def remove_from_bag(request, item_id):
     """ Remove the item from shopping bag """
 
-    try:
-        bag = request.session.get('bag', {})
-        size_id = request.POST.get('size_id')
+    product = get_object_or_404(Product, pk=item_id)
+    bag = request.session.get('bag', {})
+    size_id = request.POST.get('size_id')
 
-        if size_id:
-            key = f"{item_id}:size-{size_id}"
+    if size_id:
+        size = get_object_or_404(
+            ProductSize,
+            pk=size_id,
+            product_id=item_id
+        )
+        key = f"{item_id}:size-{size_id}"
 
-        else:
-            key = str(item_id)
+        bag.pop(key, None)
+
+        messages.success(
+            request,
+            f'Successfully removed {product.name} ({size.label} from your bag)'
+            )
+
+    else:
+        key = str(item_id)
+        messages.success(
+            request,
+            f'Successfully removed {product.name} from your bag'
+            )
 
         bag.pop(key, None)
 
         request.session['bag'] = bag
 
-        return HttpResponse(status=200)
-
-    except Exception as e:
-        print(e)
-        return HttpResponse(status=500)
+    return HttpResponse(status=200)
+    return HttpResponse(status=500)
