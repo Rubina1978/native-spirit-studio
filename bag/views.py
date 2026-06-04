@@ -24,16 +24,18 @@ def add_to_bag(request, item_id):
     if size_id:
         size = get_object_or_404(ProductSize, pk=size_id, product_id=item_id)
         key = f"{item_id}:size-{size.id}"
+        messages.success(request, f'Added {product.name} ({size.label})')
+        
     else:
         size = None
         key = str(item_id)
+        messages.success(request, f'Added {product.name} to your bag')
 
     if key in bag:
         bag[key] += quantity
+
     else:
         bag[key] = quantity
-        messages.success(request, f'Added {product.name} to your bag')
-        print("MESSAGE TEST")
 
     request.session['bag'] = bag
     return redirect(redirect_url)
@@ -42,23 +44,45 @@ def add_to_bag(request, item_id):
 
 
 def adjust_bag(request, item_id):
+    """ Adjust the quantity of the specified product """
 
-    """ Adjust the quantity of the specified
-    product to the specified amount """
+    product = get_object_or_404(Product, pk=item_id)
 
     quantity = int(request.POST.get('quantity'))
     size_id = request.POST.get('size_id')
     bag = request.session.get('bag', {})
 
     if size_id:
+        size = get_object_or_404(
+            ProductSize,
+            pk=size_id,
+            product_id=item_id
+        )
         key = f"{item_id}:size-{size_id}"
     else:
         key = str(item_id)
 
     if quantity > 0:
         bag[key] = quantity
+
+        if size_id:
+            messages.success(
+                request,
+                f'Updated quantity of {product.name} ({size.label}) to {quantity}'
+            )
+        else:
+            messages.success(
+                request,
+                f'Updated quantity of {product.name} to {quantity}'
+            )
+
     else:
         bag.pop(key, None)
+
+        messages.success(
+            request,
+            f'Removed {product.name} from your bag'
+        )
 
     request.session['bag'] = bag
     return redirect(reverse('view_bag'))
@@ -73,6 +97,7 @@ def remove_from_bag(request, item_id):
 
         if size_id:
             key = f"{item_id}:size-{size_id}"
+
         else:
             key = str(item_id)
 
