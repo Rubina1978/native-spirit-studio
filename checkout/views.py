@@ -4,7 +4,7 @@ from django.conf import settings
 
 from .forms import OrderForm
 from .models import Order, OrderLineItem
-from products.models import Product
+from products.models import Product, ProductSize
 from bag.context import bag_contents
 
 import stripe
@@ -30,30 +30,40 @@ def checkout(request):
         order_form = OrderForm(form_data)
         if order_form.is_valid():
             order = order_form.save()
-            for item_id, item_data in bag.items():
+            for key, quantity in bag.items():
                 try:
-                    product = Product.objects.get(id=item_id)
-                    if isinstance(item_data, int):
+                    if ':size-' in key:
+                        product_id, size_part = key.split(':size-')
+                        size_id = int(size_part)
+
+                        product = Product.objects.get(id=product_id)
+                        size = ProductSize.objects.get(id=size_id, product=product)
+
                         order_line_item = OrderLineItem(
                             order=order,
                             product=product,
-                            quantity=item_data,
+                            quantity=quantity,
+                            product_size=size.label,
+                            size_price=size.price
                         )
                         order_line_item.save()
+
                     else:
-                        for size, quantity in item_data['items_by_size'].items():
-                            order_line_item = OrderLineItem(
-                                order=order,
-                                product=product,
-                                quantity=quantity,
-                                product_size=size,
-                            )
-                            order_line_item.save()
+                        product = Product.objects.get(id=key)
+
+                        order_line_item = OrderLineItem(
+                            order=order,
+                            product=product,
+                            quantity=quantity,
+                        )
+                        order_line_item.save()
+
+
                 except Product.DoesNotExist:
                     messages.error(request, (
                         "One of the products in your bag wasn't found in our database. "
                         "Please call us for assistance!")
-                    )
+                        )
                     order.delete()
                     return redirect(reverse('view_bag'))
 
@@ -68,7 +78,7 @@ def checkout(request):
         if not bag:
             messages.error(request, "There's nothing in your bag at the moment")
             return redirect(reverse('products'))
-        
+
         current_bag = bag_contents(request)
         total = current_bag['grand_total']
         stripe_total = round(total * 100)
@@ -77,7 +87,7 @@ def checkout(request):
             amount=stripe_total,
             currency=settings.STRIPE_CURRENCY,
         )
-        
+
         order_form = OrderForm()
 
         # in the video, the below code is not indented properly
