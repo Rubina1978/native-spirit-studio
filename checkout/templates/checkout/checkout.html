@@ -1,6 +1,7 @@
 {% extends 'base.html'%}
 {% load static %}
 
+
 {% block extra_css %}
 <link rel="stylesheet" href="{% static 'checkout/css/checkout.css' %}">
 {% endblock %}
@@ -133,6 +134,13 @@
                 </form>
             </div>
         </div>  
+    </div>
+    <div id="loading-overlay">
+        <h3 class="text-light logo-font loading-spinner"> 
+            <span class="icon">
+                <i class="fas fa-sync-alt fa-spin"></i>
+            </span>
+        </h3>
     </div>
 {% endblock %}
 {% block postloadjs %}
