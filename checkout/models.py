@@ -48,8 +48,6 @@ class Order(models.Model):
 
         self.grand_total = self.order_total + self.delivery_cost
 
-  
-
         super().save(update_fields=[
             'order_total',
             'delivery_cost',
