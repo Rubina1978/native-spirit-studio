@@ -69,7 +69,8 @@ def adjust_bag(request, item_id):
         if size_id:
             messages.success(
                 request,
-                f'Updated quantity of {product.name}({size.label}) to {quantity}'
+                f'Updated quantity of {product.name}({size.label})\
+                    to {quantity}'
             )
         else:
             messages.success(
@@ -107,7 +108,8 @@ def remove_from_bag(request, item_id):
 
             messages.success(
                 request,
-                f'Successfully removed {product.name} ({size.label}) from your bag'
+                f'Successfully removed {product.name} ({size.label}) \
+                from your bag'
             )
         else:
             key = str(item_id)
@@ -123,5 +125,5 @@ def remove_from_bag(request, item_id):
         return HttpResponse(status=200)
 
     except Exception as e:
-        print(e)
-        return HttpResponse(status=500)
+
+        return HttpResponse(content=e, status=500)
