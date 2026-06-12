@@ -40,9 +40,8 @@ class StripeWH_handler:
 
 # Metadata may be absent on test-triggered events
 
-        bag = intent.metadata.get('bag', '')
-
-        save_info = intent.metadata.get('save_info')
+        bag = getattr(intent.metadata, 'bag', '')
+        save_info = getattr(intent.metadata, 'save_info', None)
 
 # Get the Charge object for billing details and authoritative total
 
@@ -167,8 +166,9 @@ class StripeWH_handler:
             )
 
             for key, quantity in json.loads(bag).items():
-                product_id, size_part = key.split(':size-')
+
                 if ':size-' in key:
+                    product_id, size_part = key.split(':size-')
 
                     size_id = int(size_part)
 
@@ -214,10 +214,12 @@ class StripeWH_handler:
 
                 status=500)
 
-        HttpResponse(
+        return HttpResponse(
 
             content=(
+
                 f'Webhook received: {event["type"]} | '
+
                 f'SUCCESS: Created order in webhook'
 
             ),
