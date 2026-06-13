@@ -115,14 +115,14 @@ SITE_ID = 1
 Requirements for email registration
 
 """
-EMAIL_BACKEND = 'django.core.mail.backend.console.EmailBackend'
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
-ACCOUNT_AUTHENTICATION_METHOD = 'username_email'     # tells allauth what we want to allow - username or email  # noqa
-ACCOUNT_EMAIL_REQUIRED = True  # email is required to register to the site
-ACCOUNT_EMAIL_VERIFICATION = 'mandatory'   # verification is mandatory so users emails are real # noqa
-ACCOUNT_SIGNUP_EMAIL_ENTER_TWICE = True   # have to add twice
-ACCOUNT_USERNAME_MIN_LENGTH = 4    # must have min 4 characters
-LOGIN_URL = '/accounts/login/'   # specifying login url and and url to redirect back after logging in.  # noqa
+ACCOUNT_AUTHENTICATION_METHOD = 'username_email'
+ACCOUNT_EMAIL_REQUIRED = True
+ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
+ACCOUNT_SIGNUP_EMAIL_ENTER_TWICE = True
+ACCOUNT_USERNAME_MIN_LENGTH = 4
+LOGIN_URL = '/accounts/login/'
 LOGIN_REDIRECT_URL = '/'  # home
 
 

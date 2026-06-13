@@ -71,7 +71,7 @@ def product_detail(request, product_id):
     product = get_object_or_404(Product, pk=product_id)
 
     # github copilot
-    size_categories = {'blankets', 'rugs'}
+    size_categories = {'blankets', 'rugs', 'clearance', 'deals', 'new_arrivals'}
     allow_sizes = bool(
         product.has_sizes
         and product.category
