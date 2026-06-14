@@ -10,6 +10,7 @@ from django.http import HttpResponse
 from .models import Order, OrderLineItem
 
 from products.models import Product, ProductSize
+from profiles.models import UserProfile
 
 
 class StripeWH_handler:
@@ -51,6 +52,22 @@ class StripeWH_handler:
 
         grand_total = round(stripe_charge.amount / 100, 2)
 
+
+         # update profile information in save_info
+        profile = None
+        username = intent.metadata.username
+        if username != 'AnonymousUser':
+            profile = UserProfile.objects.get(user__username=username)
+            if save_info:
+                profile.default_phone_number = billing_details.phone
+                profile.default_country = billing_details.address.country
+                profile.default_postcode = billing_details.address.postal_code
+                profile.default_town_or_city = billing_details.address.city
+                profile.default_street_address1 = billing_details.address.line1
+                profile.default_street_address2 = billing_details.address.line2
+                profile.default_county = billing_details.address.state
+                profile.save()
+
 # Option A: read the address from billing details
 
         address = billing_details.address
@@ -73,7 +90,7 @@ class StripeWH_handler:
 
         county = address.state or None
 
-# Check whether the order already exists (created by the checkout view)
+        # Check whether the order already exists (created by the checkout view)
 
         order_exists = False
 
@@ -142,7 +159,7 @@ class StripeWH_handler:
             order = Order.objects.create(
 
                 full_name=name,
-
+                user_profile=profile,
                 email=email,
 
                 phone_number=phone,
