@@ -6,9 +6,11 @@ import stripe
 
 
 from django.http import HttpResponse
+from django.core.mail import send_mail
+from django.template.loader import render_to_string
+from django.conf import settings
 
 from .models import Order, OrderLineItem
-
 from products.models import Product, ProductSize
 from profiles.models import UserProfile
 
@@ -20,6 +22,23 @@ class StripeWH_handler:
     def __init__(self, request):
 
         self.request = request
+
+    def _send_confirmation_email(self, order):
+        """Send the user a confirmation email"""
+        cust_email = order.email
+        subject = render_to_string(
+            'checkout/confirmation_emails/confirmation_email_subject.txt',
+            {'order': order})
+        body = render_to_string(
+            'checkout/confirmation_emails/confirmation_email_body.txt',
+            {'order': order, 'contact_email': settings.DEFAULT_FROM_EMAIL})
+
+        send_mail(
+            subject,
+            body,
+            settings.DEFAULT_FROM_EMAIL,
+            [cust_email]
+        )
 
     def handle_event(self, event):
 
@@ -52,8 +71,7 @@ class StripeWH_handler:
 
         grand_total = round(stripe_charge.amount / 100, 2)
 
-
-         # update profile information in save_info
+        # update profile information in save_info
         profile = None
         username = intent.metadata.username
         if username != 'AnonymousUser':
@@ -139,7 +157,7 @@ class StripeWH_handler:
                 time.sleep(1)
 
         if order_exists:
-
+            self._send_confirmation_email(order)
             return HttpResponse(
 
                 content=(
@@ -230,7 +248,7 @@ class StripeWH_handler:
                 content=f'Webhook received: {event["type"]} | ERROR: {e}',
 
                 status=500)
-
+        self._send_confirmation_email(order)
         return HttpResponse(
 
             content=(

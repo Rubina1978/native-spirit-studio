@@ -136,7 +136,7 @@ def checkout(request):
             except UserProfile.DoesNotExist:
                 order_form = OrderForm()
         else:
-         order_form = OrderForm()
+            order_form = OrderForm()
 
         # in the video, the below code is not indented properly
         # this is the correct indentation
