@@ -1,0 +1,1 @@
+web: gunicorn native_spirit_studio.wsgi:application
