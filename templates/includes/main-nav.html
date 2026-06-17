@@ -44,10 +44,10 @@
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="specials-link" data-toggle="dropdown" aria-haspopup"true" aria-expanded="false">
                 Special Offers</a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="{% url 'products' %}?category=special_offers" class="dropdown-item">New Arrivals</a>
-                <a href="{% url 'products' %}?category=special_offers" class="dropdown-item">Deals</a>
+                <a href="{% url 'products' %}?category=new_arrivals" class="dropdown-item">New Arrivals</a>
+                <a href="{% url 'products' %}?category=deals" class="dropdown-item">Deals</a>
                 <a href="{% url 'products' %}?category=clearance" class="dropdown-item">Clearance</a>
-                <a href="{% url 'products' %}?category=special_offers,clearance" class="dropdown-item">All Specials</a>
+                <a href="{% url 'products' %}?category=special_offers,clearance,deals,new_arrivals" class="dropdown-item">All Specials</a>
             </div>
         </li>
     </ul>
