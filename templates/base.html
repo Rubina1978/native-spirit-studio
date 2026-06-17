@@ -95,9 +95,9 @@
                 <div><i class="fas fa-shopping-bag fa-lg"></i></div>
                 <p class="my-0">
                   {% if grand_total %}
-                  ${{ grand_total|floatformat:2 }}
+                  £{{ grand_total|floatformat:2 }}
                   {% else %}
-                  $0.00
+                  £0.00
                   {% endif %}
                 </p>
               </div>
@@ -114,6 +114,7 @@
         </button>
         {% include 'includes/mobile-top-header.html' %}
         {% include 'includes/main-nav.html' %}
+       
       </nav>
     </div>
     <div id="delivery-banner" class="row text-center">
@@ -147,6 +148,12 @@
 
   {% block content %}
   {% endblock %}
+
+  {% block page_footer %}
+    {% include 'includes/footer-nav.html'%}
+  {% endblock %}
+
+
 
   {% block postloadjs %}
 

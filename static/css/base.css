@@ -20,6 +20,8 @@ p {
     color: black;
 }
 
+
+
 /* from Bulma */
 .icon {
     align-items: center;
@@ -288,6 +290,16 @@ input[name='q']::placeholder {
     border-radius: 0;
 }
 
+/* footer*/
+
+footer {
+    background-color: #000000cb;
+}
+footer p,
+footer a,
+footer h6 {
+    color: white !important;
+}
 
 /* -------------------------------- Media Queries */
 
