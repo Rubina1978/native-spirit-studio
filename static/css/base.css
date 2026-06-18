@@ -295,6 +295,10 @@ input[name='q']::placeholder {
 footer {
     background-color: #000000cb;
 }
+
+footer p {
+    line-height: 1.4rem;
+}
 footer p,
 footer a,
 footer h6 {

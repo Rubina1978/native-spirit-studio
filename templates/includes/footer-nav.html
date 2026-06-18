@@ -49,13 +49,13 @@
             <h6 class="text-uppercase fw-bold mb-4">
             Products
           </h6>
-            <p class="small text-white logo-font mb-2"><a href="{% url 'products' %}" class="dropdown-item">All Products</a></p>
-            <p class="small text-white mb-0"><a href="{% url 'products' %}?category=new_arrivals" class="dropdown-item">New Arrivals</a></p>
-            <p class="small text-white mb-3"><a href="{% url 'products' %}?category=clearance" class="dropdown-item">Clearance</a></p>
+            <p class="small text-white logo-font mb-2"><a href="{% url 'products' %}" class="dropdown-item text-left">All Products</a></p>
+            <p class="small text-white text-left mb-0"><a href="{% url 'products' %}?category=new_arrivals" class="dropdown-item">New Arrivals</a></p>
+            <p class="small text-white text-left mb-3"><a href="{% url 'products' %}?category=clearance" class="dropdown-item">Clearance</a></p>
             <h6 class="small text-white logo-font fw-bold mb-2">Collections</h6>
-            <p class="small text-white text-muted mb-0"><a href="{% url 'products'%}?category=necklaces,bracelets,rings" class="dropdown-item">Jewellery</a></p> 
-            <p class="small text-white text-muted mb-0"><a href="{% url 'products' %}?category=dreamcatchers,blankets,rugs" class="dropdown-item">Home & Decor</a></p>
-            <p class="small text-white text-muted mb-0"><a href="{% url 'products'%}?category=teas,candles,wellness_gift_boxes" class="dropdown-item">Wellness</a></p>  
+            <p class="small text-white text-left  mb-0"><a href="{% url 'products'%}?category=necklaces,bracelets,rings" class="dropdown-item">Jewellery</a></p> 
+            <p class="small text-white text-left mb-0"><a href="{% url 'products' %}?category=dreamcatchers,blankets,rugs" class="dropdown-item">Home & Decor</a></p>
+            <p class="small text-white text-left mb-0"><a href="{% url 'products'%}?category=teas,candles,wellness_gift_boxes" class="dropdown-item">Wellness</a></p>  
         </div>
         <!-- Grid Column-->
 
@@ -67,13 +67,13 @@
           </h6>
           {% if request.user.is_authenticated %}
             {% if request.user.is_superuser %}
-                <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
+                <a href="{% url 'add_product' %}" class="dropdown-item text-left small">Product Management</a>
             {% endif %}
-            <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
-            <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+            <a href="{% url 'profile' %}" class="dropdown-item text-left small">My Profile</a>
+            <a href="{% url 'account_logout' %}" class="dropdown-item text-left small">Logout</a>
         {% else %}
-            <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
-            <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
+            <a href="{% url 'account_signup' %}" class="dropdown-item text-left small">Register</a>
+            <a href="{% url 'account_login' %}" class="dropdown-item text-left small">Login</a>
         {% endif %}
           
         </div>
@@ -82,14 +82,25 @@
         <!-- Grid column -->
         <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
           <!-- Links -->
-          <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-          <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
-          <p>
-            <i class="fas fa-envelope me-3"></i>
-            info@example.com
-          </p>
-          <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
-          <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+            <p class="d-flex text-left small">
+                <i class="fas fa-home me-3 mt-1 mr-1"></i>
+                <span>
+                Dreamland Valley<br>
+                Boulevard of Happy<br>
+                1111, The Earth
+                </span>
+            </p>
+
+            <p class="text-left small">
+                <i class="fas fa-envelope me-3 mr-1"></i>
+                nativespiritstudio@example.com
+            </p>
+
+            <p class="text-left small">
+                <i class="fas fa-phone me-3 mr-1"></i>
+                +00 111 186 26
+            </p>
         </div>
         <!-- Grid column -->
       </div>
@@ -99,9 +110,8 @@
   <!-- Section: Links  -->
 
   <!-- Copyright -->
-  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-    © 2021 Copyright:
-    <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+  <div class="text-center p-3 small" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2021 Copyright: Hana Rubesova
   </div>
   <!-- Copyright -->
 </footer>
