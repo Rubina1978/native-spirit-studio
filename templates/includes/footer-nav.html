@@ -1,5 +1,5 @@
 <!-- Footer -->
-<footer class="text-center text-lg-start bg-body-tertiary text-muted"  >
+<footer class="text-center text-lg-start bg-body-tertiary text-white"  >
   <!-- Section: Social media -->
   <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
     <!-- Left -->
@@ -38,8 +38,8 @@
           <h6 class="text-uppercase fw-bold mb-4 me-3">
             Native Spirit Studio
           </h6>
-          <p class="text-left text-white small"> Native Spirit Studio is inspired by mindfulness, self-reflection, ancient wisdom, and a connection to nature. Our collection of blankets, jewellery, and home décor is chosen to bring warmth, comfort, and meaning into everyday life. </p> 
-          <p class="text-left text-white small">Through thoughtfully selected products and our Mindfulness Journal, we encourage moments of gratitude, reflection, and personal wellbeing in a busy world.</p>
+          <p class="text-left text-white small"> Native Spirit Studio is inspired by mindfulness, self-reflection, ancient wisdom, and a connection to nature. Our collection of blankets, jewellery, and home décor brings warmth, comfort, and meaning into everyday life. </p> 
+          <p class="text-left text-white small">Through thoughtfully selected products and our Mindfulness Journal, we encourage gratitude, reflection, and personal wellbeing.</p>
         </div>
         <!-- Grid column -->
 
@@ -49,7 +49,7 @@
             <h6 class="text-uppercase fw-bold mb-4">
             Products
           </h6>
-            <p class="small text-white logo-font fw-bold mb-2"><a class="textwhite" href="{% url 'products' %}" class="dropdown-item">All products</a></p>
+            <p class="small text-white logo-font mb-2"><a href="{% url 'products' %}" class="dropdown-item">All Products</a></p>
             <p class="small text-white mb-0"><a href="{% url 'products' %}?category=new_arrivals" class="dropdown-item">New Arrivals</a></p>
             <p class="small text-white mb-3"><a href="{% url 'products' %}?category=clearance" class="dropdown-item">Clearance</a></p>
             <h6 class="small text-white logo-font fw-bold mb-2">Collections</h6>
@@ -65,18 +65,17 @@
           <h6 class="text-uppercase fw-bold mb-4">
             Useful links
           </h6>
-          <p>
-            <a href="#!" class="text-reset">Pricing</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Settings</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Orders</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Help</a>
-          </p>
+          {% if request.user.is_authenticated %}
+            {% if request.user.is_superuser %}
+                <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
+            {% endif %}
+            <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
+            <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+        {% else %}
+            <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
+            <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
+        {% endif %}
+          
         </div>
         <!-- Grid column -->
 

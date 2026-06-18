@@ -301,6 +301,17 @@ footer h6 {
     color: white !important;
 }
 
+footer a:hover {
+    color:#000 !important;
+    
+}
+
+footer a:focus,
+footer a:active {
+    background-color: #b4b6b6 !important;
+    color: #000
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
