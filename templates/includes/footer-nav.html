@@ -35,7 +35,7 @@
         <!-- Grid column -->
         <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
           <!-- Content -->
-          <h6 class="text-uppercase fw-bold mb-4 me-3">
+          <h6 class="text-uppercase fw-bold mb-4 me-3 text-left">
             Native Spirit Studio
           </h6>
           <p class="text-left text-white small"> Native Spirit Studio is inspired by mindfulness, self-reflection, ancient wisdom, and a connection to nature. Our collection of blankets, jewellery, and home décor brings warmth, comfort, and meaning into everyday life. </p> 
@@ -66,11 +66,12 @@
             Useful links
           </h6>
           {% if request.user.is_authenticated %}
+             <a href="{% url 'profile' %}" class="dropdown-item text-left small">My Profile</a>
+             <a href="{% url 'journal' %}" class="dropdown-item text-left small">My Journal</a>
             {% if request.user.is_superuser %}
                 <a href="{% url 'add_product' %}" class="dropdown-item text-left small">Product Management</a>
+                <a href="{% url 'account_logout' %}" class="dropdown-item text-left small">Logout</a>
             {% endif %}
-            <a href="{% url 'profile' %}" class="dropdown-item text-left small">My Profile</a>
-            <a href="{% url 'account_logout' %}" class="dropdown-item text-left small">Logout</a>
         {% else %}
             <a href="{% url 'account_signup' %}" class="dropdown-item text-left small">Register</a>
             <a href="{% url 'account_login' %}" class="dropdown-item text-left small">Login</a>
@@ -82,7 +83,7 @@
         <!-- Grid column -->
         <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
           <!-- Links -->
-            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+            <h6 class="text-uppercase fw-bold mb-4 text-left">Contact</h6>
             <p class="d-flex text-left small">
                 <i class="fas fa-home me-3 mt-1 mr-1"></i>
                 <span>
@@ -111,7 +112,7 @@
 
   <!-- Copyright -->
   <div class="text-center p-3 small" style="background-color: rgba(0, 0, 0, 0.05);">
-    © 2021 Copyright: Hana Rubesova
+    © 2026 Copyright: Hana Rubesova
   </div>
   <!-- Copyright -->
 </footer>

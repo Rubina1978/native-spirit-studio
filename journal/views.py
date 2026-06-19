@@ -1,4 +1,4 @@
-from django.shortcuts import render, get_object_or_404, redirect
+from django.shortcuts import render, get_object_or_404, redirect, reverse
 from .models import Reflection
 from .forms import ReflectionForm
 from django.contrib.auth.decorators import login_required
@@ -37,3 +37,36 @@ def add_reflection(request):
             'form': form
         }
     return render(request, 'journal/add_reflection.html', context)
+
+
+def edit_reflection(request, reflection_id):
+    reflection = get_object_or_404(
+         Reflection, pk=reflection_id, user=request.user)
+
+    if request.method == 'POST':
+
+        form = ReflectionForm(request.POST, instance=reflection)
+        if form.is_valid():
+            form.save()
+            return redirect(reverse('journal'))
+    else:
+        form = ReflectionForm(instance=reflection)
+    
+    context = {
+        'form': form,
+        'reflection': reflection,
+    }
+
+    return render(request, 'journal/add_reflection.html', context)
+
+
+@login_required
+def delete_reflection(request, reflection_id):
+    reflection = get_object_or_404(
+         Reflection, pk=reflection_id, user=request.user)
+    
+    reflection.delete()
+    
+    return redirect('journal')
+
+
