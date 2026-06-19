@@ -39,6 +39,7 @@ def add_reflection(request):
     return render(request, 'journal/add_reflection.html', context)
 
 
+@login_required
 def edit_reflection(request, reflection_id):
     reflection = get_object_or_404(
          Reflection, pk=reflection_id, user=request.user)
@@ -51,7 +52,7 @@ def edit_reflection(request, reflection_id):
             return redirect(reverse('journal'))
     else:
         form = ReflectionForm(instance=reflection)
-    
+
     context = {
         'form': form,
         'reflection': reflection,
@@ -64,9 +65,7 @@ def edit_reflection(request, reflection_id):
 def delete_reflection(request, reflection_id):
     reflection = get_object_or_404(
          Reflection, pk=reflection_id, user=request.user)
-    
+
     reflection.delete()
-    
+
     return redirect('journal')
-
-

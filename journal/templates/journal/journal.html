@@ -19,14 +19,14 @@
     <div class="overlay"></div>
     <div class="container">
         <div class="row">
-            <div class="col">
-               <hr> 
+            <div class="col mt-3">
                 <h2>My Journal</h2>
+                <hr> 
             </div>
         </div>
         <div class="row">
             <div class="col">
-                 <a href="{% url 'add_reflection' %}" class="btn btn-info mb-4">
+                 <a href="{% url 'add_reflection' %}" class="btn btn-info mb-4 ">
                 Add Reflection
             </a>
             </div>
@@ -35,31 +35,36 @@
             {% for reflection in reflections %}
             <div class="col-12 col-md-6 col-lg-4 mb-4">
 
-    <div class="card">
+    <div class="card shadow-sm">
         <img src="{% static 'journal/images/card-image.jpg' %}"
              class="card-img-top"
              alt="Journal reflection">
 
         <div class="card-body">
-            <p class="card-text">
-                <strong>{{ reflection.created_on }}</strong>
+           <p>
+                <strong><span class="badge badge text-muted  mr-2">Date: {{ reflection.created_on}}</span></strong>
+               
             </p>
-        </div>
-
-        <ul class="list-group list-group-flush">
-            <li class="list-group-item">
-                <strong>Mood:</strong> {{ reflection.mood }}
-            </li>
-            <li class="list-group-item">
-                <strong>Happy Moment:</strong> {{ reflection.happy_moment }}
-            </li>
-            <li class="list-group-item">
-                <strong>Challenge:</strong> {{ reflection.challenge }}
-            </li>
-            <li class="list-group-item">
-                <strong>Notes:</strong> {{ reflection.notes }} 
-            </li>
-        </ul>
+            <hr>
+           
+            <p class="mb-3"><span class="badge badge-info mr-2">Mood:</span>
+                {{ reflection.mood }}
+            </p>
+            
+           <p><span class="badge bg-success text-white">Happy Moment</span>
+                {{ reflection.happy_moment }}
+            </p>
+           
+            <p class="mb-3"><span class="badge badge-warning mr-2">Challenge:</span>
+                {{ reflection.challenge }}
+            </p>
+            
+            <p class="mb-3"><span class="badge badge-secondary mr-2">Notes:</span>
+                {{ reflection.notes }}
+            </p>
+            
+        </div>     
+           
     </div>
 
     <div class="mt-2 d-flex gap-2 justify-content-end">

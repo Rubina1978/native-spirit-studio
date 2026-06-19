@@ -20,24 +20,42 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <h2 class="logo-font mt-4 mb-4">My Reflection Today</h2>
+                <h2 class="logo-font mt-4 mb-4">Journal Reflection</h2>
+                <p>Take a quiet moment to connect with yourself. </p>
+
+                <p>Reflect on the path you walked today, the challenges you overcame, the gratitude you felt, and the lessons you wish to carry into tomorrow. Reflection is not about perfection—it is about awareness, growth, and gratitude.
+                </p>
                 <hr>
             </div>
         </div>
-        <div class="row">
-            <div class="col-12 col-lg-6 mb-3">
-                <h3 class="text-muted">Add Reflection</h3>
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-8 mb-3">
                 {% if reflection %}
                 <form method="POST" action="{% url 'edit_reflection' reflection.id %}" class="mt-3" id="profile-update-form">
                  {% else %}
                 <form method="POST" action="{% url 'add_reflection' %}">
                  {% endif %}
+
                     {% csrf_token %}
-                    {{ form|crispy }}
+
+                      <fieldset class="border rounded  fw-bold p-4">
+                <legend class="w-auto px-2">
+                    {% if reflection %}
+                        Edit Reflection
+                    {% else %}
+                        Add Reflection
+                    {% endif %}
+                </legend>
+
+                {{ form|crispy }}
+            </fieldset>
                      <button type="submit" class="btn btn-info rounded-0 mt-3">
-                        Save Reflection
-                    </button>
-                </form>
+                {% if reflection %}
+                    Update Reflection
+                {% else %}
+                    Save Reflection
+                {% endif %}
+            </button>
             </div>
         </div>
     </div>
