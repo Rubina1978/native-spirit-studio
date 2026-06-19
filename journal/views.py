@@ -1,4 +1,5 @@
 from django.shortcuts import render, get_object_or_404, redirect, reverse
+from django.contrib import messages
 from .models import Reflection
 from .forms import ReflectionForm
 from django.contrib.auth.decorators import login_required
@@ -27,11 +28,15 @@ def add_reflection(request):
             reflection = form.save(commit=False)
             reflection.user = request.user
             reflection.save()
+            messages.success(request, "Your reflection was successfully added")
 
             return redirect('journal')
 
     else:
         form = ReflectionForm()
+        messages.error(
+            request, "An error occured when adding reflection. \
+            Please xheck if form is valid and try again later")
 
     context = {
             'form': form
@@ -49,9 +54,14 @@ def edit_reflection(request, reflection_id):
         form = ReflectionForm(request.POST, instance=reflection)
         if form.is_valid():
             form.save()
+            messages.success(
+                request, "your reflection was successfully edited.")
             return redirect(reverse('journal'))
     else:
         form = ReflectionForm(instance=reflection)
+        messages.error(
+            request, "An error occured when editing reflection, \
+            please try again later.")
 
     context = {
         'form': form,
@@ -67,5 +77,6 @@ def delete_reflection(request, reflection_id):
          Reflection, pk=reflection_id, user=request.user)
 
     reflection.delete()
+    messages.success(request, "Reflection successfully deleted.")
 
     return redirect('journal')
