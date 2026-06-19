@@ -33,19 +33,44 @@
         </div>
         <div class="row">
             {% for reflection in reflections %}
-            <div class="col-12 md-3">
-                {{ reflection.created_on}}
-                <p><strong>Mood: </strong>{{ reflection.mood }}</p>
-                <p><strong>Happy Moment: </strong>{{ reflection.happy_moment }}
-                <p><strong>Challenge Of The Day :</strong>{{ reflection.challenge }}
-                <p><strong>Grateful for: </strong>{{ reflection.gratitude }}
-                <p><strong>Notes: </strong>{{ reflection.notes }}
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
 
-            
-            </div>
+    <div class="card">
+        <img src="{% static 'journal/images/card-image.jpg' %}"
+             class="card-img-top"
+             alt="Journal reflection">
+
+        <div class="card-body">
+            <p class="card-text">
+                <strong>{{ reflection.created_on }}</strong>
+            </p>
+        </div>
+
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+                <strong>Mood:</strong> {{ reflection.mood }}
+            </li>
+            <li class="list-group-item">
+                <strong>Happy Moment:</strong> {{ reflection.happy_moment }}
+            </li>
+            <li class="list-group-item">
+                <strong>Challenge:</strong> {{ reflection.challenge }}
+            </li>
+            <li class="list-group-item">
+                <strong>Notes:</strong> {{ reflection.notes }} 
+            </li>
+        </ul>
+    </div>
+
+    <div class="mt-2 d-flex gap-2 justify-content-end">
+        <a href="#" class="btn btn-info btn-sm mr-2">Update</a>
+        <a href="#" class="btn btn-danger btn-sm">Delete</a>
+    </div>
+
+</div>
             {% endfor %}
         </div>
     </div>
-                
+</div>            
                
 {% endblock %}
