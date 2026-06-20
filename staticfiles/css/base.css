@@ -316,6 +316,11 @@ footer a:active {
     color: #000
 }
 
+i:hover {
+    color: black;
+    background-color: white;
+    padding: 0.2rem;
+}
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
