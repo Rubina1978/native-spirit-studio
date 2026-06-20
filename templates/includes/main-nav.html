@@ -50,5 +50,11 @@
                 <a href="{% url 'products' %}?category=special_offers,clearance,deals,new_arrivals" class="dropdown-item">All Specials</a>
             </div>
         </li>
+        <li class="nav-item dropdown">
+            {% if request.user.is_authenticated %}
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'journal' %}" id="journal-link" aria-haspopup"true" aria-expanded="false">
+                My Journal</a>
+            {% endif %}
+        </li>
     </ul>
 </div>
