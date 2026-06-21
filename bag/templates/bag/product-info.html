@@ -1,0 +1,8 @@
+<p class="my-0">{{ item.product.name }}</p>
+    {% comment %}Modification developed with assistance of github copilot {% endcomment%}
+{% if item.size %}
+    <p class="my-0 small text-muted">Size: {{ item.size.label }}</p>
+{% endif %}
+{% if item.product.sku %}
+    <p class="my-0 small text-muted">SKU: {{ item.product.sku|upper }}</p>
+{% endif %}

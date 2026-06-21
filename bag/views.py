@@ -8,7 +8,7 @@ from products.models import ProductSize, Product
 def view_bag(request):
     """ A view that renders the bag contents page """
 
-    return render(request, 'bag.html')
+    return render(request, 'bag/bag.html')
 
 
 # modified with github copilot assistance to include size choice on items

@@ -20,14 +20,14 @@
     <div class="container">
         <div class="row">
             <div class="col">
+                
+                <h2 class="logo-font mt-3">Checkout</h2>
                 <hr>
-                <h2 class="logo-font mb-4">Checkout</h2>
-                </hr>
             </div>
         </div>
 
         <div class="row">
-            <div class="col-12 col-lg-6 order-lg-last mb-5">
+            <div class="col-12 col-lg-6 order-lg-last mb-3">
                 <p class="text-muted">Order Summary ({{ product_count }})</p>
                 <div class="row">
                     <div class="col-7 offset-2">
@@ -39,7 +39,7 @@
                 </div>
                 {% for item in bag_items %}
                 <div class="row">
-                    <div class="col-2 mb-1">
+                    <div class="col-2 ">
                         <a href="{% url 'product_detail' item.product.id %}">
                             {% if item.product.image %}
                                 <img class="w-100" src="{{ item.product.image.url }}" alt="{{ product.name }}">
