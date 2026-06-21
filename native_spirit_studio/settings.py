@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 import os
 import dj_database_url
 if os.path.isfile('env.py'):
-    import env
+    import env          # noqa: F401
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
