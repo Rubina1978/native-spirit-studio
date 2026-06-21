@@ -1,14 +1,25 @@
-html {
+html, body {
     height: 100%;
 }
+ .lost{
+    max-width: 100%;
+    height: auto;
+    max-height: 400px;
+ }
 
+ /* .container .error-page{
+    min-height: 55vh;
+ } */
+ 
 body {
     background: url('/static/images/spiritual-wolf.png') no-repeat center center fixed;
     background-size: cover;
     height:calc(100vh - 164px);
     color: #181010;
     font-family: 'Lato', sans-serif;
+    padding-top: 2rem;
 }
+
 .hero-text {
     color: #fff;
     text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
@@ -44,6 +55,7 @@ p {
     content: "";
     position: absolute;
     inset: 0;
+    height: 130vh;
     background:
         linear-gradient(
             to right,
@@ -303,7 +315,12 @@ input[name='q']::placeholder {
 
 footer {
     background-color: #000000cb;
+    bottom: 0;
+    width: 100%;
+    padding: 1rem;
+    margin-top:2rem;
 }
+
 
 footer p {
     line-height: 1.4rem;
@@ -363,6 +380,9 @@ i:hover {
     body {
         height: calc(100vh - 116px);
     }
+    .hero-text{
+        font-size: 2rem;
+    }
 
     .display-4.logo-font.text-black {
         font-size: 2rem;
@@ -399,4 +419,6 @@ i:hover {
     .increment-qty, .decrement-qty {
         padding: .25rem .5rem !important;
     }
+
+  
 }

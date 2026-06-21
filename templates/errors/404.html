@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block page_header %}
+    <div class="overlay"></div>
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+
+{% endblock %}
+
+{% block content %}
+
+        <div class="container error-page d-flex align-items-center">
+        <div class="row h-100">
+            <div class="col-12 col-md-7 mt-5">
+                <h1 class="display-4 logo-font text-black"><strong>
+                    I'm sorry you ran to a dead end (404)
+                </strong></h1>
+                <div class="my-5">
+                <h4>
+                    <a href="{% url 'products' %}" 
+                        class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3"><strong>
+                        Return to shop
+                    </strong></a>
+                </h4>
+            </div>
+            </div>
+            <div class="col-12 col-md-5">
+                <img src="{% static '/images/lost-404.png' %}"
+                alt="Lost spirit illustration" class=" img-fluid lost my-4 overflow-hidden object-fit-cover">
+            </div>   
+        </div>
+        </div>
+    </div>
+{% endblock %}
