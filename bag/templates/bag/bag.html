@@ -46,15 +46,12 @@
                                 <div class="col-12 col-sm-6 mb-2">
                                    {% include "bag/product-info.html" %}
                                 </div>
-                                <div class="col-12 col-sm-6 mb-2">
-                                    <p class="my-0">£{{ item.unit_price|floatformat:2 }}</p>
+                                <div class="col-12 col-sm-6 mb-2 order-sm-last">
+                                    <p class="my-0">Price: £{{ item.unit_price|floatformat:2 }}</p>
+                                    <p class="my-0"><strong>Subtotal: £{{ item.total|floatformat:2 }}</strong></p>
                                 </div>
                                 <div class="col-12 col-sm-6 mb-2">
                                     {% include "bag/quantity-form.html" %}
-
-                                </div>
-                                <div class="col-12 col-sm-6 mb-2">
-                                    <p class="my-0">£{{ item.total|floatformat:2 }}</p>
                                 </div>
                             </div>
                             <div class="row"><div class="col"><hr></div></div>
@@ -70,7 +67,7 @@
                                     <th scope="col"></th>
                                     <th scope="col">Price</th>
                                     <th scope="col">Qty</th>
-                                    <th scope="col">Subtotal</th>
+                                    <th scope="col">Subtotal</th> 
                                 </tr>
                             </thead>
                  {% for item in bag_items %}

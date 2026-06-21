@@ -363,6 +363,9 @@ i:hover {
     body {
         height: calc(100vh - 116px);
     }
+    .hero-text{
+        font-size: 2rem;
+    }
 
     .display-4.logo-font.text-black {
         font-size: 2rem;

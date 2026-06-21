@@ -77,26 +77,32 @@ def add_reflection(request):
 
 @login_required
 def edit_reflection(request, reflection_id):
+    quote, author = random.choice(quotes)
+
     reflection = get_object_or_404(
          Reflection, pk=reflection_id, user=request.user)
 
     if request.method == 'POST':
-
         form = ReflectionForm(request.POST, instance=reflection)
+
         if form.is_valid():
             form.save()
             messages.success(
-                request, "your reflection was successfully edited.")
+                request, "your reflection was successfully edited."
+            )
             return redirect(reverse('journal'))
+        else:
+            messages.error(
+                request, "An error occured when editing reflection, \
+                please try again later.")
     else:
         form = ReflectionForm(instance=reflection)
-        messages.error(
-            request, "An error occured when editing reflection, \
-            please try again later.")
 
     context = {
         'form': form,
         'reflection': reflection,
+        'quote': quote,
+        'author': author
     }
 
     return render(request, 'journal/add_reflection.html', context)
