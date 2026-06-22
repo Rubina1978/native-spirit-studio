@@ -38,7 +38,7 @@ Alternatively, open your project in Gitpod and run the server. Once the site is 
 
 ![screenshot](documentation/amiresponsive.png)
 
-source: [native-spirit-studio amiresponsive](https://ui.dev/amiresponsive?url=https://native-spirit-studio-3057c5b47433.herokuapp.com)
+source: [native-spirit-studio amiresponsive](https://fireship.dev/amiresponsive?url=https://native-spirit-studio-3057c5b47433.herokuapp.com/)
 
 > [!IMPORTANT]  
 > The examples in these templates are strongly influenced by the Code Institute walkthrough project called "Boutique Ado".
@@ -125,7 +125,7 @@ I used extention from [pallete.site](https://palette.site/) to generate my color
 - `#DF2935` secondary text.
 - `#FDCA40` secondary highlights.
 
-![screenshot](documentation/coolors.png)
+![screenshot](documentation/color-palette/color-palette.png)
 
 ### Typography
 
@@ -135,8 +135,7 @@ Explain any fonts and icon libraries used, like **Google Fonts**, **Font Awesome
 
 ⚠️ --- END --- ⚠️
 
-- [Montserrat](https://fonts.google.com/specimen/Montserrat) was used for the primary headers and titles.
-- [Lato](https://fonts.google.com/specimen/Lato) was used for all other secondary text.
+- [Lato](https://fonts.google.com/specimen/Lato) was used throughout the site.
 - [Font Awesome](https://fontawesome.com) icons were used throughout the site, such as the social media icons in the footer.
 
 ## Wireframes
