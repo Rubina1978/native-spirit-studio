@@ -190,65 +190,58 @@ In this section, list all of your possible user stories for the project. Samples
 
 ## Features
 
-⚠️ INSTRUCTIONS ⚠️
-
-In this section, you should go over the different parts of your project, and describe each feature. You should explain what value each of the features provides for the user, focusing on your target audience, what they want to achieve, and how your project can help them achieve these things.
-
-**IMPORTANT**: Remember to always include a screenshot of each individual feature!
-
-⚠️ --- END --- ⚠️
-
 ### Existing Features
 
 | Feature | Notes | Screenshot |
 | --- | --- | --- |
 | Register | Authentication is handled by allauth, allowing users to register accounts. | ![screenshot](documentation/features/register.png) |
 | Login | Authentication is handled by allauth, allowing users to log in to their existing accounts. | ![screenshot](documentation/features/login.png) |
-| Logout | Authentication is handled by allauth, allowing users to log out of their accounts. | ![screenshot](documentation/features/logout.png) |
-| Product List | Users can browse all available products with sorting, filtering by categories, and search functionality. | ![screenshot](documentation/features/product-list.png) |
+| Logout | Authentication is handled by allauth, allowing users to log out of their accounts. | ![screenshot](documentation/features/sign-out.png) |
+| Product List | Users can browse all available products with sorting, filtering by categories, and search functionality. | ![screenshot](documentation/features/product-listing.png) |
 | Product Details | Displays detailed information about a selected product, including its name, description, price, an image, and available sizes. | ![screenshot](documentation/features/product-details.png) |
-| Add to Bag | Users can add items to their shopping bag, with support for selecting different sizes if applicable. | ![screenshot](documentation/features/add-to-bag.png) |
+| Add to Bag | Users can add items to their shopping bag, with support for selecting different sizes if applicable. | ![screenshot](documentation/features/add-to-shoppingbag.png) |
 | View Bag | Users can view the contents of their shopping bag, adjust quantities, or remove items. | ![screenshot](documentation/features/view-bag.png) |
 | Checkout | Users can proceed to checkout, where they provide their delivery details and payment information using Stripe integration. | ![screenshot](documentation/features/checkout.png) |
 | Order Confirmation | Users receive an on-screen and email confirmation with details of their purchase. | ![screenshot](documentation/features/order-confirmation.png) |
 | Profile Management | Users can manage their profile information, including their default delivery address and order history. | ![screenshot](documentation/features/profile-management.png) |
 | Order History | Users can view their past orders and access details of each order, including products purchased and the delivery status. | ![screenshot](documentation/features/order-history.png) |
 | Product Management | Superusers can add, edit, and delete products from the site via a CRUD interface. | ![screenshot](documentation/features/product-management.png) |
-| Newsletter | Users can register their email address to receive newsletters from the site. Currently, this only stores the email in the database. | ![screenshot](documentation/features/newsletter.png) |
-| Contact | Users can submit a message via the contact form, which stores their name, email, and message in the database. | ![screenshot](documentation/features/contact.png) |
-| FAQs | Admins can manage frequently asked questions, which are displayed on the site for users. | ![screenshot](documentation/features/faqs.png) |
+| Journal | Users can register their email address to receive newsletters from the site. Currently, this only stores the email in the database. | ![screenshot](documentation/features/journal.png) |
+| Add Reflection with Motivational Quotes | Users can submit a message via the contact form, which stores their name, email, and message in the database. | ![screenshot](documentation/features/contact.png) |
 | User Feedback | Clear and concise Django messages are used to provide feedback to users when interacting with various features (e.g., adding products to the bag, checking out, etc.). | ![screenshot](documentation/features/user-feedback.png) |
-| Heroku Deployment | The site is deployed to Heroku, making it accessible online for users. | ![screenshot](documentation/features/heroku.png) |
-| SEO | SEO optimization with a sitemap.xml, robots.txt, and appropriate meta tags to improve search engine visibility. | ![screenshot](documentation/features/seo.png) |
-| Marketing | Social media presence is available in the footer using external links, as well as a Facebook Marketplace wireframe in the README for future integrations. | ![screenshot](documentation/features/marketing.png) |
-| 404 | The 404 error page will indicate when a user has navigated to a page that doesn't exist, replacing the default Heroku 404 page with one that ties into the site's look and feel. | ![screenshot](documentation/features/404.png) |
+| Heroku Deployment | The site is deployed to Heroku, making it accessible online for users. | ![screenshot](documentation/features/deployed-to-heroku.png) |
+| SEO | SEO optimization with a sitemap.xml, robots.txt, and appropriate meta tags to improve search engine visibility. | ![screenshot](documentation/features/SEO.png) |
+| Marketing | Social media presence is available in the footer using external links, as well as a Facebook Marketplace wireframe in the README for future integrations. | ![screenshot](documentation/features/marketing-socials.png) |
+| 404 | The 404 error page will indicate when a user has navigated to a page that doesn't exist, replacing the default Heroku 404 page with one that ties into the site's look and feel. | ![screenshot](documentation/features/page-404.png) |
 
 ### Future Features
 
-⚠️ INSTRUCTIONS ⚠️
-
-Do you have additional ideas that you'd like to include on your project in the future? Fantastic, list them here! It's always great to have plans for future improvements. Consider adding any helpful links or notes to help remind you in the future, if you revisit the project in a couple years.
-
-A few examples are listed below to align with possible ways to improve on the sample walkthrough project, to give you some inspiration.
-
-⚠️ --- END ---⚠️
-
 - **Product Reviews & Ratings**: Allow customers to leave reviews and rate products, with admin moderation. Display average ratings and review counts on product pages.
-- **Wishlist Functionality**: Enable users to save products to a personal wishlist for future purchases. Notify users if wishlist items go on sale or are back in stock.
-- **Product Recommendations**: Implement a "Customers who bought this also bought" or "You might also like" feature to suggest related products.
+- **Wishlist**: Enable users to save products to a personal wishlist for future purchases. Notify users if wishlist items go on sale or are back in stock.
+- **Product Recommendations**: Implement a "You might also like" feature to suggest related products.
 - **Live Chat Support**: Provide real-time customer support through an integrated live chat or chatbot.
-- **Abandoned Cart Recovery**: Automatically send emails to users who add items to their cart but don't complete the purchase, offering discounts or reminders.
-- **Discount Codes and Vouchers**: Allow the admin to create discount codes or vouchers for promotions and marketing campaigns.
+- **Discount Codes and Vouchers**: Allow promotions, discounts and marketing campaigns.
+- **Countdown**: Implement countdown to specif events, promotions, discounts and other perks.
+- **Membership Club**: Implement Membership scheme where customers will be encouranged to become members of the club with perks such as get notified first about new arrivals, promotions, discounts.
 - **Loyalty Program**: Introduce a points-based loyalty system where customers earn points for purchases, which can be redeemed for discounts.
+- **Newsletter**: Encourage customers to signup for Newsletter.
+- **Contact Form**: Allow customers to communicate with the store via messaging in contact form.
+- **Wellbeing and Mindfulness Blog**: Create a block app to provide customers with variety of topics on mental health, wellbeing, ancient and indigenous wisdom, spirituality, culture customs and other related topics.
+- **Video Collection Channels**: Implement fuction to incorporate motivational, mindfulness, neuroscience documents and talkshows.
+- **Paid for Extra Services**: Offer paid for additional services e.g. healing sessions, meditations, yoga.
+- **Event calendar**: Implement calendar functions listing all upcoming events, talks and webinars on personal wellbeing, mindfulness and other niche topics.
+- **Sponsorship**: Implement ways to benefit from spnsorships and display logos of companies sponsoring the site and its activities.
 - **Product Inventory Alerts**: Notify customers when out-of-stock items are back in stock, or when low inventory is approaching.
+-**Dark Scheme**Implement function of dark background if prefered by users.
 - **Multi-Currency and Multi-Language Support**: Expand the application to support multiple currencies and languages to reach a global audience.
 - **Product Bundles**: Offer discounted product bundles (e.g., buy 3 for the price of 2) or custom product kits.
-- **Social Media Integration**: Enable users to share products directly to social media platforms or implement a social login for quick account creation.
 - **Shipping Tracking Integration**: Provide real-time shipping updates and tracking information directly within the user’s order history.
 - **Advanced Analytics Dashboard for Admin**: Offer an in-depth dashboard that displays sales trends, popular products, customer behavior, and more.
-- **Subscription-Based Products**: Allow users to subscribe to certain products (e.g., monthly deliveries of consumables like coffee or skincare products).
-- **Product Video Demos**: Support product videos to better showcase features, especially for high-tech or complex items.
 - **Mobile App**: Develop a mobile app for iOS and Android, providing users with a more optimized shopping experience on mobile devices.
+- **Push up notifications**: Implement push up notifications to alert users about upcoming events, product promotions and others.
+- **Affiliate Marketing**: Enable use of affiliate marketing for generating extra income.
+- **Return Cookies and Privacy Policies**: Incorporate Return, Cookies and Privacy Policy for customers who need to return pruducts or are conscious about their personal data. Also as legislation requirements in the EU.
+-**Display Awards achievemts and company history**:Implement display of awards, milestones and history of the business.
 
 ## Tools & Technologies
 
