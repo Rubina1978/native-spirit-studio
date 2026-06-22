@@ -129,41 +129,29 @@ I used extention from [pallete.site](https://palette.site/) to generate my color
 
 ### Typography
 
-⚠️ INSTRUCTIONS ⚠️
-
-Explain any fonts and icon libraries used, like **Google Fonts**, **Font Awesome**, etc. Consider adding a link to each font used, the Font Awesome site (if used), or similar icon library.
-
-⚠️ --- END --- ⚠️
-
 - [Lato](https://fonts.google.com/specimen/Lato) was used throughout the site.
 - [Font Awesome](https://fontawesome.com) icons were used throughout the site, such as the social media icons in the footer.
 
 ## Wireframes
 
-⚠️ INSTRUCTIONS ⚠️
-
-If you've created wireframes or mock-ups, use this section to display screenshots of your wireframes. The example table below uses sample pages from the walkthrough project to give you some inspiration for your own project, so please adjust accordingly.
-
-⚠️ --- END --- ⚠️
-
 To follow best practice, wireframes were developed for mobile, tablet, and desktop sizes.
-I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wireframes.
+I've used [Canva](https://www.canva.com/design/DAHMH7LlV7Y/XaGCeZbZ6i76GU5r3Nn7ng/edit) to design my site wireframes.
 
 | Page | Mobile | Tablet | Desktop |
 | --- | --- | --- | --- |
 | Register | ![screenshot](documentation/wireframes/mobile-register.png) | ![screenshot](documentation/wireframes/tablet-register.png) | ![screenshot](documentation/wireframes/desktop-register.png) |
 | Login | ![screenshot](documentation/wireframes/mobile-login.png) | ![screenshot](documentation/wireframes/tablet-login.png) | ![screenshot](documentation/wireframes/desktop-login.png) |
 | Profile | ![screenshot](documentation/wireframes/mobile-profile.png) | ![screenshot](documentation/wireframes/tablet-profile.png) | ![screenshot](documentation/wireframes/desktop-profile.png) |
-| Home | ![screenshot](documentation/wireframes/mobile-landing.png) | ![screenshot](documentation/wireframes/tablet-landing-page.png) | ![screenshot](documentation/wireframes/desktop-home.png) |
-| Products | ![screenshot](documentation/wireframes/mobile-product-listing.png) | ![screenshot](documentation/wireframes/tablet-product-listing.png) | ![screenshot](documentation/wireframes/desktop-products.png) |
+| Home | ![screenshot](documentation/wireframes/mobile-landing.png) | ![screenshot](documentation/wireframes/tablet-landing-page.png) | ![screenshot](documentation/wireframes/desktop-landing.png) |
+| Products | ![screenshot](documentation/wireframes/mobile-product-listing.png) | ![screenshot](documentation/wireframes/tablet-product-listing.png) | ![screenshot](documentation/wireframes/desktop-product-listing.png) |
 | Product Details | ![screenshot](documentation/wireframes/mobile-product-detail.png) | ![screenshot](documentation/wireframes/tablet-product-details.png) | ![screenshot](documentation/wireframes/desktop-product-details.png) |
-| Bag | ![screenshot](documentation/wireframes/mobile-shopping-bag.png) | ![screenshot](documentation/wireframes/tablet-shopping-bag.png) | ![screenshot](documentation/wireframes/desktop-bag.png) |
-| Checkout | ![screenshot](documentation/wireframes/mobile-making-order.png) | ![screenshot](documentation/wireframes/tablet-making-order.png) | ![screenshot](documentation/wireframes/desktop-checkout.png) |
+| Bag | ![screenshot](documentation/wireframes/mobile-shopping-bag.png) | ![screenshot](documentation/wireframes/tablet-shopping-bag.png) | ![screenshot](documentation/wireframes/desktop-shoppingbag.png) |
+| Checkout | ![screenshot](documentation/wireframes/mobile-making-order.png) | ![screenshot](documentation/wireframes/tablet-making-order.png) | ![screenshot](documentation/wireframes/desktop-make-order.png) |
 | Checkout Success | ![screenshot](documentation/wireframes/checkout-success.png) | ![screenshot](documentation/wireframes/tablet-checkout-success.png) | ![screenshot](documentation/wireframes/desktop-checkout-success.png) |
 | Add Product | ![screenshot](documentation/wireframes/mobile-add-product.png) | ![screenshot](documentation/wireframes/tablet-add-product.png) | ![screenshot](documentation/wireframes/desktop-add-product.png) |
 | Edit Product | ![screenshot](documentation/wireframes/mobile-edit-product.png) | ![screenshot](documentation/wireframes/tablet-edit-product.png) | ![screenshot](documentation/wireframes/desktop-edit-product.png) |
-| Journal | ![screenshot](documentation/wireframes/mobile-journal.png) | ![screenshot](documentation/wireframes/tablet-journal.png) | ![screenshot](documentation/wireframes/desktop-newsletter.png) |
-| Add reflection | ![screenshot](documentation/wireframes/mobile-add-reflection.png) | ![screenshot](documentation/wireframes/tablet-add-reflection.png) | ![screenshot](documentation/wireframes/desktop-newsletter.png) |
+| Journal | ![screenshot](documentation/wireframes/mobile-journal.png) | ![screenshot](documentation/wireframes/tablet-journal.png) | ![screenshot](documentation/wireframes/desktop-journal.png) |
+| Add reflection | ![screenshot](documentation/wireframes/mobile-add-reflection.png) | ![screenshot](documentation/wireframes/tablet-add-reflection.png) | ![screenshot](documentation/wireframes/desktop-add-reflection.png) |
 | 404 | ![screenshot](documentation/wireframes/mobile-404.png) | ![screenshot](documentation/wireframes/tablet-404.png) | ![screenshot](documentation/wireframes/desktop-404.png) |
 
 ## User Stories
