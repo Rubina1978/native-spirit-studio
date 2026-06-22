@@ -36,7 +36,7 @@ Alternatively, open your project in Gitpod and run the server. Once the site is 
 
 🛑 --- END ---- 🛑
 
-![screenshot](documentation/mockup.png)
+![screenshot](documentation/amiresponsive.png)
 
 source: [native-spirit-studio amiresponsive](https://ui.dev/amiresponsive?url=https://native-spirit-studio-3057c5b47433.herokuapp.com)
 
@@ -59,7 +59,7 @@ source: [native-spirit-studio amiresponsive](https://ui.dev/amiresponsive?url=ht
 **Primary User Needs**
 - Guest users need to browse products and checkout with ease.
 - Registered customers need a streamlined shopping experience with account and order history features.
-- Site owners need robust tools for inventory and order management.
+- Site owners need tools for inventory and order management.
 
 **Business Goals**
 - Drive sales by providing a user-friendly shopping experience.
@@ -72,7 +72,7 @@ source: [native-spirit-studio amiresponsive](https://ui.dev/amiresponsive?url=ht
 **[Features](#features)** (see below)
 
 **Content Requirements**
-- Product details, including name, price, size, description, category, and images.
+- Product details, including name, price, size(where applicable), description, category, and images.
 - Clear prompts and instructions for browsing, filtering, and purchasing.
 - Order details, confirmation pages, status messages and email notifications.
 - Secure payment processing using Stripe.
@@ -94,7 +94,7 @@ source: [native-spirit-studio amiresponsive](https://ui.dev/amiresponsive?url=ht
 2. Guest user adds items to the Shopping bag → proceeds to checkout.
 3. Guest user creates an account or logs in during checkout → completes purchase.
 4. Returning customers log in → view past orders and track purchase history.
-5. Registered users can navigate to Personal Reflections Journal, add reflection, update and delete via Reflection Form while reading randomly populated motivational quotes for better more personal experience.
+5. Registered users can navigate to Personal Reflections Journal, add reflection, update and delete via Reflection Form while reading randomly populated motivational quotes for better, more personal experience.
 6. Site owners manage inventory → add, update, or delete products and categories.
 
 
@@ -118,10 +118,10 @@ When you add a color to the palette, the URL is dynamically updated, making it e
 
 ⚠️ --- END --- ⚠️
 
-I used [coolors.co](https://coolors.co/080708-3772ff-df2935-fdca40-e6e8e6) to generate my color palette.
+I used extention from [pallete.site](https://palette.site/) to generate my color palette.
 
 - `#000000` primary text.
-- `#3772FF` primary highlights.
+- `#17a2b8` primary highlights.
 - `#DF2935` secondary text.
 - `#FDCA40` secondary highlights.
 

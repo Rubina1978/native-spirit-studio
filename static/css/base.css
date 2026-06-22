@@ -6,10 +6,6 @@ html, body {
     height: auto;
     max-height: 400px;
  }
-
- /* .container .error-page{
-    min-height: 55vh;
- } */
  
 body {
     background: url('/static/images/spiritual-wolf.png') no-repeat center center fixed;
@@ -17,7 +13,6 @@ body {
     height:calc(100vh - 164px);
     color: #181010;
     font-family: 'Lato', sans-serif;
-    padding-top: 2rem;
 }
 
 .hero-text {
@@ -30,8 +25,6 @@ body {
 p {
     color: black;
 }
-
-
 
 /* from Bulma */
 .icon {
@@ -55,7 +48,6 @@ p {
     content: "";
     position: absolute;
     inset: 0;
-    height: 130vh;
     background:
         linear-gradient(
             to right,
