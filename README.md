@@ -27,14 +27,6 @@ The project also provided an opportunity to combine a wide range of full-stack d
 
 **Site Mockups**
 *([amiresponsive](https://ui.dev/amiresponsive?url=https://native-spirit-studio-3057c5b47433.herokuapp.com), [techsini](https://techsini.com/multi-mockup), etc.)*
-Having issues generating site mockups? This is likely due to security policies with your deployed site.
-If you open up your DevTools, there may be an error referencing `X-Frame-Options`.
-
-For Chrome users, head over to http://bit.ly/3iRPn4u and install the extension within your browser. Once installed, navigate back to the mockup site of your choice. You should find your site rendering in the various devices now.
-
-Alternatively, open your project in Gitpod and run the server. Once the site is running, click the `Ports` tab from your Gitpod Terminal. Click the padlock on the appropriate port for your project (`Flask: 5000`, `Django: 8000`). This will make your local page public temporarily. Now, copy the URL of your live-preview page into the responsive tool above. You should find your site rendering in the various devices.
-
-🛑 --- END ---- 🛑
 
 ![screenshot](documentation/amiresponsive.png)
 
@@ -46,8 +38,6 @@ source: [native-spirit-studio amiresponsive](https://fireship.dev/amiresponsive?
 ## UX
 
 ### The 5 Planes of UX
-
-⚠️ NOTE: make sure to update the text below to match your own project! ⚠️
 
 #### 1. Strategy
 
@@ -110,14 +100,6 @@ source: [native-spirit-studio amiresponsive](https://fireship.dev/amiresponsive?
 
 ### Colour Scheme
 
-⚠️INSTRUCTIONS ⚠️
-
-Explain your colors and color scheme. Consider adding a link and screenshot for your color scheme using [coolors](https://coolors.co/generate).
-
-When you add a color to the palette, the URL is dynamically updated, making it easier for you to return back to your color palette later if needed. See example below:
-
-⚠️ --- END --- ⚠️
-
 I used extention from [pallete.site](https://palette.site/) to generate my color palette.
 
 - `#000000` primary text.
@@ -135,7 +117,7 @@ I used extention from [pallete.site](https://palette.site/) to generate my color
 ## Wireframes
 
 To follow best practice, wireframes were developed for mobile, tablet, and desktop sizes.
-I've used [Canva](https://www.canva.com/design/DAHMH7LlV7Y/XaGCeZbZ6i76GU5r3Nn7ng/edit) to design my site wireframes.
+I've used [Canva](https://canva.link/o2hicsh64mpbmf9) to design my site wireframes.
 
 | Page | Mobile | Tablet | Desktop |
 | --- | --- | --- | --- |
@@ -160,27 +142,26 @@ I've used [Canva](https://www.canva.com/design/DAHMH7LlV7Y/XaGCeZbZ6i76GU5r3Nn7n
 | --- | --- | --- |
 | As a guest user | I would to see a list of products | so that I can select some to purchase before deciding to create an account. |
 | As a guest user | I would like to be able to register, sign in out | so that I can enjoy the benefits of being a member. |
-| As a user | I would liket to have a place where I can do journaling by adding my reflection as and when i feel like to | so so that I can improve my mental health through simple mindfulness action for my personal wellbeing. |
-| As a customer | be able to sort available products by category | so that I can easily identify best priced, rated and categorically sorter products. |
+| As a user | I would like to have a place where I can do journaling by adding my reflection as and when I feel like to | so that I can improve my mental health through simple mindfulness action for my personal wellbeing. |
+| As a customer | would like to be able to sort available products by category | so that I can easily identify best priced, rated and categorically sorter products. |
 |As a customer | I would like to see my balance anywhere on the screen | so that I don't overspend|
 | As a customer | I would like to sort products by price (low-to-high/high-to-low) and name (alphabetical) | so that I can quickly organize items in a way that suits my shopping style. |
-| As a customer | see individual product details (description, price, image, etc.) | so that I so that I can see what interests me. |
-| As a customer | I to be able to change, adjust or delete products in my shopping bag using quantity increment/decrement buttons | so that I can adjust how many units of a product I want before checkout. |
+| As a customer | see individual product details (description, price, image, etc.) | so that I can see what interests me. |
+| As a customer | I would like to be able to change, adjust or delete products in my shopping bag using quantity increment/decrement buttons | so that I can adjust how many units of a product I want before checkout. |
 | As a customer| I would like to see any deals, clearance and special offers | so that I can take advantage of special savings and save money or buy more products |
 | As a customer | I would like to view and manage my shopping bag | so that I can review, add, or remove items before proceeding to checkout. |
-| As a customer | I would like to adjust the quantity of items in my cart | so that I can modify my purchase preferences without leaving the cart. |
-| As a customer | I would like to remove items from my cart | so that I can remove products I no longer wish to buy. |
+| As a customer | I would like to adjust the quantity of items in my shopping bag | so that I can modify my purchase preferences without leaving the shopping bag. |
+| As a customer | I would like to remove items from my shopping bag | so that I can remove products I no longer wish to buy. |
 | As a customer | I would like to proceed to checkout where I see my shopping bag items, grand total, and input my name, email, shipping address, and card details | so that I can complete my purchase. |
 | As a customer | I would like get real time confirmation of payment | so that I can have a record of my transaction and order details. |
-| As a customer | I would like  I want to get real time order confirmation of paymene with a checkout order number after completing my purchase | so that I know my order has been successfully placed. |
-| As a customer | I would like to securely enter my card details using Stripe at checkout | so that so that I can confidently provide the information needed to make a purchase. |
-| As a returning customer | I would like have personal profile | keep track of my purchases, favorites and add my payment details
+| As a customer | I would like to securely enter my card details using Stripe at checkout | so that I can confidently provide the information needed to make a purchase. |
+| As a returning customer | I would like have personal profile | keep track of my purchases and add my payment details
 
 ##Acceptance Criteria. |
 | As a returning customer | I would like the checkout process to remember my shipping address | so that future purchases are quicker and easier. |
-| As a site owner | I would like add new products with a name, description, price, images, and category | so that I can keep the store up to date. |
-| As a site owner | I would like to update product details (name, price, description, image, category) at any time | so that I can keep the store up to date. |
-| As a site owner | I would like to delete products that are no longer available or relevant | so so that I can keep the store up to date. |
+| As a site owner | I would like add new products with a name, description, size(if applicable) price, images, and category | so that I can keep the store up to date. |
+| As a site owner | I would like to update product details (name, price, size(if applicable), description, image, category) at any time | so that I can keep the store up to date. |
+| As a site owner | I would like to delete products that are no longer available or relevant | so that I can keep the store up to date. |
 | As a site owner | I would like to see all orders made on the website | so that I can track track customers purchases. |
 | As a site owner | I would like to manage product categories | so that I can ensure items are correctly organized and easy for customers to find. |
 | As a user | I would like to see a 404 error page if I get lost | so that it's obvious that I've stumbled upon a page that doesn't exist. |
@@ -215,7 +196,7 @@ I've used [Canva](https://www.canva.com/design/DAHMH7LlV7Y/XaGCeZbZ6i76GU5r3Nn7n
 
 - **Product Reviews & Ratings**: Allow customers to leave reviews and rate products, with admin moderation. Display average ratings and review counts on product pages.
 - **Wishlist**: Enable users to save products to a personal wishlist for future purchases. Notify users if wishlist items go on sale or are back in stock.
-- **Product Recommendations**: Implement a "You might also like" feature to suggest related products.
+- **Product Recommendations**: Implement a "Other customers often also buy" feature to suggest related products.
 - **Live Chat Support**: Provide real-time customer support through an integrated live chat or chatbot.
 - **Discount Codes and Vouchers**: Allow promotions, discounts and marketing campaigns.
 - **Countdown**: Implement countdown to specif events, promotions, discounts and other perks.
@@ -224,7 +205,7 @@ I've used [Canva](https://www.canva.com/design/DAHMH7LlV7Y/XaGCeZbZ6i76GU5r3Nn7n
 - **Newsletter**: Encourage customers to signup for Newsletter.
 - **Contact Form**: Allow customers to communicate with the store via messaging in contact form.
 - **Wellbeing and Mindfulness Blog**: Create a block app to provide customers with variety of topics on mental health, wellbeing, ancient and indigenous wisdom, spirituality, culture customs and other related topics.
-- **Video Collection Channels**: Implement fuction to incorporate motivational, mindfulness, neuroscience documents and talkshows.
+- **Video Collection Channels**: Implement fuction to incorporate motivational, mindfulness, neuroscience documents and podcasts.
 - **Paid for Extra Services**: Offer paid for additional services e.g. healing sessions, meditations, yoga.
 - **Event calendar**: Implement calendar functions listing all upcoming events, talks and webinars on personal wellbeing, mindfulness and other niche topics.
 - **Sponsorship**: Implement ways to benefit from spnsorships and display logos of companies sponsoring the site and its activities.
@@ -237,8 +218,8 @@ I've used [Canva](https://www.canva.com/design/DAHMH7LlV7Y/XaGCeZbZ6i76GU5r3Nn7n
 - **Mobile App**: Develop a mobile app for iOS and Android, providing users with a more optimized shopping experience on mobile devices.
 - **Push up notifications**: Implement push up notifications to alert users about upcoming events, product promotions and others.
 - **Affiliate Marketing**: Enable use of affiliate marketing for generating extra income.
-- **Return Cookies and Privacy Policies**: Incorporate Return, Cookies and Privacy Policy for customers who need to return pruducts or are conscious about their personal data. Also as legislation requirements in the EU.
--**Display Awards achievemts and company history**:Implement display of awards, milestones and history of the business.
+- **Returns, Cookies and Privacy Policy**: Incorporate Return, Cookies and Privacy Policy for customers who need to return pruducts or are conscious about their personal data. Also as legislation requirements in the EU.
+-**Display Awards achievemts and company history**: Implement display of awards, milestones and history of the business.
 
 ## Tools & Technologies
 
@@ -268,16 +249,6 @@ I've used [Canva](https://www.canva.com/design/DAHMH7LlV7Y/XaGCeZbZ6i76GU5r3Nn7n
 | [![badge](https://img.shields.io/badge/W3Schools-grey?logo=w3schools&logoColor=04AA6D)](https://www.w3schools.com) | Tutorials/Reference Guide |
 | [![badge](https://img.shields.io/badge/Copilot-grey?logo=githubcopilot&logoColor=##000000)](https://github.com/copilot) | Help debug, troubleshoot, and explain things. |
 | [![badge](https://img.shields.io/badge/favicon.io-grey?logo=fi&logoColor=209CEE)](https://favicon.io) | Generating the favicon. |
-
-⚠️ NOTE ⚠️
-
-Want to add more?
-
-- Tutorial: https://shields.io/badges/static-badge
-- Icons/Logos: https://simpleicons.org
-  - FYI: not all logos are available to use
-
-🛑 --- END --- 🛑
 
 ## Database Design
 
@@ -436,24 +407,18 @@ source: [medium.com](https://medium.com/@yathomasi1/1-using-django-extensions-to
 
 ### GitHub Projects
 
-⚠️ TIP ⚠️
-
-Consider adding screenshots of your Projects Board(s), Issues (open and closed), and Milestone tasks.
-
-⚠️ --- END ---⚠️
-
 [GitHub Projects](https://www.github.com/Rubina1978/native-spirit-studio/projects) served as an Agile tool for this project. Through it, EPICs, User Stories, issues/bugs, and Milestone tasks were planned, then subsequently tracked on a regular basis using the Kanban project board.
 
 ![screenshot](documentation/gh-projects.png)
 
 ### GitHub Issues
 
-[GitHub Issues](https://www.github.com/Rubina1978/native-spirit-studio/issues) served as an another Agile tool. There, I managed my User Stories and Milestone tasks, and tracked any issues/bugs.
+[GitHub Issues](https://github.com/Rubina1978/native-spirit-studio/issues?q=is%3Aissue%20state%3Aopen%20sort%3Arelevance-desc%20label%3Abug) served as an another Agile tool. There, I managed my User Stories and Milestone tasks, and tracked any issues/bugs.
 
 | Link | Screenshot |
 | --- | --- |
-| [![GitHub issues](https://img.shields.io/github/issues-search/Rubina1978/native-spirit-studio?query=is%3Aissue%20is%3Aopen%20-label%3Abug&label=Open%20Issues&color=yellow)](https://www.github.com/Rubina1978/native-spirit-studio/issues?q=is%3Aissue%20is%3Aopen%20-label%3Abug) | ![screenshot](documentation/gh-issues-open.png) |
-| [![GitHub closed issues](https://img.shields.io/github/issues-search/Rubina1978/native-spirit-studio?query=is%3Aissue%20is%3Aclosed%20-label%3Abug&label=Closed%20Issues&color=green)](https://www.github.com/Rubina1978/native-spirit-studio/issues?q=is%3Aissue%20is%3Aclosed%20-label%3Abug) | ![screenshot](documentation/gh-issues-closed.png) |
+| [![GitHub issues](https://img.shields.io/github/issues-search/Rubina1978/native-spirit-studio?query=is%3Aissue%20is%3Aopen%20-label%3Abug&label=Open%20Issues&color=yellow)](https://github.com/Rubina1978/native-spirit-studio/issues?q=is%3Aissue%20state%3Aopen%20sort%3Arelevance-desc%20label%3Abug) | ![screenshot](documentation/agile_development/open-bugs.png) |
+| [![GitHub closed issues](https://img.shields.io/github/issues-search/Rubina1978/native-spirit-studio?query=is%3Aissue%20is%3Aclosed%20-label%3Abug&label=Closed%20Issues&color=green)](https://github.com/Rubina1978/native-spirit-studio/issues?q=is%3Aissue%20state%3Aclosed%20sort%3Arelevance-desc%20label%3Abug) | ![screenshot](documentation/agile_development/closed-bugs.png) |
 
 ### MoSCoW Prioritization
 
@@ -471,7 +436,7 @@ I've decomposed my Epics into User Stories for prioritizing and implementing the
 
 ## Deployment
 
-The live deployed application can be found deployed on [Heroku](https://native-spirit-studio-3057c5b47433.herokuapp.com).
+The live deployed application can be found deployed on [Heroku](https://native-spirit-studio-3057c5b47433.herokuapp.com/).
 
 ### Heroku Deployment
 
@@ -486,17 +451,11 @@ Deployment steps are as follows, after account setup:
 > [!IMPORTANT]  
 > This is a sample only; you would replace the values with your own if cloning/forking my repository.
 
-🛑 !!! ATTENTION Rubina1978 !!! 🛑
-
-⚠️ DO NOT update the environment variables to your own! These should never be public; only use the demo values below! ⚠️
-⚠️ Replace the keys below with your own actual keys used; example: if not using AWS, then replace those keys with Cloudinary keys, or similar. ⚠️
-
-🛑 --- END --- 🛑
-
 | Key | Value |
 | --- | --- |
-| `AWS_ACCESS_KEY_ID` | user-inserts-own-aws-access-key-id |
-| `AWS_SECRET_ACCESS_KEY` | user-inserts-own-aws-secret-access-key |
+| `AWS_ACCESS_KEY_ID` | user-inserts-own-aws-access-key-id |        # only if using AWS
+| `AWS_SECRET_ACCESS_KEY` | user-inserts-own-aws-secret-access-key |       # only if using AWS
+| `CLOUDINARY_URL` | user-inserts-own-cloudinary-url-including-api-key-and-api-secret |
 | `DATABASE_URL` | user-inserts-own-postgres-database-url |
 | `DISABLE_COLLECTSTATIC` | 1 (*this is temporary, and can be removed for the final deployment*) |
 | `EMAIL_HOST_PASS` | user-inserts-own-gmail-api-key |
@@ -505,7 +464,7 @@ Deployment steps are as follows, after account setup:
 | `STRIPE_PUBLIC_KEY` | user-inserts-own-stripe-public-key |
 | `STRIPE_SECRET_KEY` | user-inserts-own-stripe-secret-key |
 | `STRIPE_WH_SECRET` | user-inserts-own-stripe-webhook-secret |
-| `USE_AWS` | True |
+| `USE_AWS` | True |            # only if using AWS
 
 Heroku needs some additional files in order to deploy properly.
 
@@ -656,20 +615,14 @@ You will need to create a new file called `env.py` at the root-level, and includ
 > [!IMPORTANT]  
 > This is a sample only; you would replace the values with your own if cloning/forking my repository.
 
-🛑 !!! ATTENTION Rubina1978 !!! 🛑
-
-⚠️ DO NOT update the environment variables to your own! These should never be public; only use the demo values below! ⚠️
-⚠️ Replace the keys below with your own actual keys used; example: if not using Cloudinary | AWS, then replace those keys with whatever keys you're using. ⚠️
-
-🛑 --- END --- 🛑
-
 Sample `env.py` file:
 
 ```python
 import os
 
-os.environ.setdefault("AWS_ACCESS_KEY_ID", "user-inserts-own-aws-access-key-id")
-os.environ.setdefault("AWS_SECRET_ACCESS_KEY", "user-inserts-own-aws-secret-access-key")
+os.environ.setdefault("AWS_ACCESS_KEY_ID", "user-inserts-own-aws-access-key-id")  # only if using AWS
+os.environ.setdefault("AWS_SECRET_ACCESS_KEY", "user-inserts-own-aws-secret-access-key")  # only if using AWS
+os.environ.setdefault("CLOUDINARY", "user-inserts-cloudinary-api-url")
 os.environ.setdefault("DATABASE_URL", "user-inserts-own-postgres-database-url")
 os.environ.setdefault("EMAIL_HOST_PASS", "user-inserts-own-gmail-host-api-key")
 os.environ.setdefault("EMAIL_HOST_USER", "user-inserts-own-gmail-email-address")
@@ -728,21 +681,12 @@ By forking the GitHub Repository, you make a copy of the original repository on 
 
 ### Local VS Deployment
 
-⚠️ INSTRUCTIONS ⚠️
+During deployment, user registration creates accounts successfully but an unresolved issue occurs during the email verification process, resulting in a 500 error. SMTP configuration was tested successfully and emails can be sent through Django. If testing registration locally, emails are sent successfully and display in console, however, on the live site it shows error 500 and if attempt the registration with the same credentials again, an error shows on registration, that user with this credentials already exists. As a temporary measure for assessment purposes, email verification was disabled to allow examiners to register and access all functionality.
 
-Use this space to discuss any differences between the local version you've developed, and the live deployment site. Generally, there shouldn't be [m]any major differences, so if you honestly cannot find any differences, feel free to use the following example:
-
-⚠️ --- END --- ⚠️
 
 There are no remaining major differences between the local version when compared to the deployed version online.
 
 ## Credits
-
-⚠️ INSTRUCTIONS ⚠️
-
-In the following sections, you need to reference where you got your content, media, and any extra help. It is common practice to use code from other repositories and tutorials (which is totally acceptable), however, it is important to be very specific about these sources to avoid potential plagiarism.
-
-⚠️ --- END ---⚠️
 
 ### Content
 
@@ -757,15 +701,17 @@ Eventually you'll want to learn how to use Git branches. Here's a helpful tutori
 | Source | Notes |
 | --- | --- |
 | [Markdown Builder](https://markdown.2bn.dev) | Help generating Markdown files |
-| [Chris Beams](https://chris.beams.io/posts/git-commit) | "How to Write a Git Commit Message" |
 | [Boutique Ado](https://codeinstitute.net) | Code Institute walkthrough project inspiration |
 | [Bootstrap](https://getbootstrap.com) | Various components / responsive front-end framework |
-| [AWS S3](https://aws.amazon.com/s3) | Cloud storage for static/media files |
 | [Whitenoise](https://whitenoise.readthedocs.io) | Static file service |
 | [Stripe](https://docs.stripe.com/payments/elements) | Online payment services |
 | [Gmail API](https://developers.google.com/gmail/api/guides) | Sending payment confirmation emails |
-| [Python Tutor](https://pythontutor.com) | Additional Python help |
-| [ChatGPT](https://chatgpt.com) | Help with code logic and explanations |
+| [ChatGPT](https://chatgpt.com) | Help with code logic and explanations, correcting written content,as well as AI generated Hero Image on Native Spirit Studio |
+| [GitHub Copilot](https://github.com/features/copilot) | Help with code logic, trace and resolve bugs |
+| [Codex](https://openai.com/codex/) | Help with code logic, trace and resolve bugs |
+| [Bootstrap Free Examples & Tutorial](https://mdbootstrap.com/docs/standard/navigation/footer/) | To gerate footer for my app Native Spirit Studio |
+| [79 Positive Quotes To Uplift Yourself](https://wisdomquotes.com/positive-quotes/) | to generate motivational quotes on Journal App Add Reflection |
+| [Canva](https://canva.com) | for creating wireframes and AI generated images for product listing |
 
 ### Media
 
@@ -776,23 +722,14 @@ Use this space to provide attribution links to any media files borrowed from els
 Looking for some media files? Here are some popular sites to use. The list of examples below is by no means exhaustive.
 
 - Images
-    - [Pexels](https://www.pexels.com)
-    - [Unsplash](https://unsplash.com)
+   
     - [Pixabay](https://pixabay.com)
-    - [Lorem Picsum](https://picsum.photos) (placeholder images)
-    - [Wallhere](https://wallhere.com) (wallpaper / backgrounds)
-    - [This Person Does Not Exist](https://thispersondoesnotexist.com) (reload to get a new person)
 - Audio
-    - [Audio Micro](https://www.audiomicro.com/free-sound-effects)
-    - [Button Clicks](https://www.zapsplat.com/sound-effect-category/button-clicks)
-    - [Lasers & Weapons](https://www.zapsplat.com/sound-effect-category/lasers-and-weapons/page/5)
-    - [Puzzle Music](https://soundimage.org/puzzle-music)
-    - [Camtasia Audio](https://library.techsmith.com/camtasia/assets/Audio)
+   N/A
 - Video
-    - [Videvo](https://www.videvo.net)
+  N/A
 - Image Compression
-    - [TinyPNG](https://tinypng.com) (for images <5MB)
-    - [CompressPNG](https://compresspng.com) (for images >5MB)
+  N/A
 
 A few examples have been provided below to give you some ideas on how to do your own Media credits.
 
@@ -801,27 +738,17 @@ A few examples have been provided below to give you some ideas on how to do your
 | Source | Notes |
 | --- | --- |
 | [favicon.io](https://favicon.io) | Generating the favicon |
-| [Boutique Ado](https://codeinstitute.net) | Sample images provided from the walkthrough projects |
 | [Font Awesome](https://fontawesome.com) | Icons used throughout the site |
-| [Pexels](https://images.pexels.com/photos/416160/pexels-photo-416160.jpeg) | Hero image |
-| [Wallhere](https://c.wallhere.com/images/9c/c8/da4b4009f070c8e1dfee43d25f99-2318808.jpg!d) | Background wallpaper |
-| [Pixabay](https://cdn.pixabay.com/photo/2017/09/04/16/58/passport-2714675_1280.jpg) | Background wallpaper |
-| [DALL-E 3](https://openai.com/index/dall-e-3) | AI generated artwork |
-| [TinyPNG](https://tinypng.com) | Compressing images < 5MB |
-| [CompressPNG](https://compresspng.com) | Compressing images > 5MB |
-| [CloudConvert](https://cloudconvert.com/webp-converter) | Converting images to `.webp` |
+| [Pixabay](https://pixabay.com/vectors/signpost-direction-choice-decision-2009312/) | 404 page image |
+| [Canva](https://canva.link/o2hicsh64mpbmf9) | for creating wireframes and AI generated images for product listing |
+
 
 ### Acknowledgements
 
-⚠️ INSTRUCTIONS ⚠️
-
-Use this space to provide attribution and acknowledgement to any supports that helped, encouraged, or supported you throughout the development stages of this project. It's always lovely to appreciate those that help us grow and improve our developer skills. A few examples have been provided below to give you some ideas.
-
-⚠️ --- END ---⚠️
-
 - I would like to thank my Code Institute mentor, [Tim Nelson](https://www.github.com/TravelTimN) for the support throughout the development of this project.
 - I would like to thank the [Code Institute](https://codeinstitute.net) Tutor Team for their assistance with troubleshooting and debugging some project issues.
-- I would like to thank the [Code Institute Slack community](https://code-institute-room.slack.com) and [Code Institute Discord community](https://discord-portal.codeinstitute.net) for the moral support; it kept me going during periods of self doubt and impostor syndrome.
-- I would like to thank my partner, for believing in me, and allowing me to make this transition into software development.
-- I would like to thank my employer, for supporting me in my career development change towards becoming a software developer.
+- I would like to thank  to [Code Institute Discord community](https://discord-portal.codeinstitute.net) for the moral support; it kept me going during periods of self doubt and impostor syndrome.
+- I would like to thank my friends, for believing in me, and being tolerant for me not socialising as much with them during the busy periods
+- I would like to thank trainer from EKC Collage [Rachel], for supporting me in my career development change towards becoming a software developer and giving moral support in times when deadline was announced too close to completion date of the course.
+- I would like to thank my mother for supporting me providing comfort when I thought I will give up and loose.
 
