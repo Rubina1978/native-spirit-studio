@@ -120,7 +120,30 @@ class StripeWH_handler:
 
                 order = Order.objects.get(
 
-                   stripe_pid=pid
+                    full_name__iexact=name,
+
+                    email__iexact=email,
+
+                    phone_number__iexact=phone,
+
+                    country__iexact=country,
+
+                    postcode__iexact=postcode,
+
+                    town_or_city__iexact=town_or_city,
+
+                    street_address1__iexact=street_address1,
+
+                    street_address2__iexact=street_address2,
+
+                    county__iexact=county,
+
+                    grand_total=grand_total,
+
+                    original_bag=bag,
+
+                    stripe_pid=pid,
+
                 )
 
                 order_exists = True

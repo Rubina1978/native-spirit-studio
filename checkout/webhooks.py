@@ -53,7 +53,7 @@ def webhook(request):
         ),
     }
     # Get the webhook type from Stripe
-    event_type = event.type
+    event_type = event['type']
     # If there is a handler for it, get it from the event map
     # Use the generic one by default
     event_handler = event_map.get(event_type, handler.handle_event)
