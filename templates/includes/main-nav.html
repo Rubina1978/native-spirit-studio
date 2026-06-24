@@ -5,9 +5,9 @@
                 Home</a>
         </li>
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup"true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 All products</a>
-            <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
+            <div class="dropdown-menu border-0">
                 <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">by price</a>
                 <a href="{% url 'products'%}?sort=rating&direction=desc" class="dropdown-item">By Rating</a>
                 <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item">By Category</a>
@@ -15,19 +15,19 @@
             </div>
         </li>
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="jewellery-link" data-toggle="dropdown" aria-haspopup"true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="jewellery-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Jewellery</a>
-            <div class="dropdown-menu border-0" aria-labelledby="jewellery-link">
-                <a href="{% url 'products' %}?category=necklaces" class="dropdown-item">Necklaces</a>
-                <a href="{% url 'products'%}?category=bracelets" class="dropdown-item">Bracelets</a>
-                <a href="{% url 'products' %}?category=rings" class="dropdown-item">Rings</a>
+            <div class="dropdown-menu border-0">
+                <a href="{% url 'products' %}?category=necklaces" class="dropdown-item" aria="necklaces">Necklaces</a>
+                <a href="{% url 'products'%}?category=bracelets" class="dropdown-item" aria="bracelets">Bracelets</a>
+                <a href="{% url 'products' %}?category=rings" class="dropdown-item" aria="rings">Rings</a>
                 <a href="{% url 'products'%}?category=necklaces,bracelets,rings" class="dropdown-item">All jewellery</a>
             </div>
         </li>
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="home-decor-link" data-toggle="dropdown" aria-haspopup"true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="home-decor-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Home & decor</a>
-            <div class="dropdown-menu border-0" aria-labelledby="home-decor-link">
+            <div class="dropdown-menu border-0">
                 <a href="{% url 'products' %}?category=dreamcatchers" class="dropdown-item">Dream Catchers</a>
                 <a href="{% url 'products' %}?category=blankets" class="dropdown-item">Blankets</a>
                 <a href="{% url 'products' %}?category=rugs" class="dropdown-item">Rugs</a>
@@ -35,9 +35,9 @@
             </div>
         </li>
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="wellness-link" data-toggle="dropdown" aria-haspopup"true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="wellness-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Wellness</a>
-            <div class="dropdown-menu border-0" aria-labelledby="wellness-link">
+            <div class="dropdown-menu border-0">
                 <a href="{% url 'products' %}?category=teas" class="dropdown-item">Teas</a>
                 <a href="{% url 'products' %}?category=candles" class="dropdown-item">Candles</a>
                 <a href="{% url 'products' %}?category=wellness_gift_boxes" class="dropdown-item">Wellness gift boxes</a>
@@ -45,9 +45,9 @@
             </div>
         </li>
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="specials-link" data-toggle="dropdown" aria-haspopup"true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="specials-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Special Offers</a>
-            <div class="dropdown-menu border-0" aria-labelledby="specials-link">
+            <div class="dropdown-menu border-0">
                 <a href="{% url 'products' %}?category=new_arrivals" class="dropdown-item">New Arrivals</a>
                 <a href="{% url 'products' %}?category=deals" class="dropdown-item">Deals</a>
                 <a href="{% url 'products' %}?category=clearance" class="dropdown-item">Clearance</a>
@@ -56,7 +56,7 @@
         </li>
         <li class="nav-item dropdown">
             {% if request.user.is_authenticated %}
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'journal' %}" id="journal-link" aria-haspopup"true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'journal' %}" id="journal-link" aria-haspopup="true" aria-expanded="false">
                 My Journal</a>
             {% endif %}
         </li>
