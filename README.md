@@ -184,7 +184,8 @@ I've used [Canva](https://canva.link/o2hicsh64mpbmf9) to design my site wirefram
 | Order History | Users can view their past orders and access details of each order, including products purchased and the delivery status. | ![screenshot](documentation/features/order-history.png) |
 | Product Management | Superusers can add, edit, and delete products from the site via a CRUD interface. | ![screenshot](documentation/features/product-management.png) |
 | Journal | Users can register their email address to receive newsletters from the site. Currently, this only stores the email in the database. | ![screenshot](documentation/features/journal.png) |
-| Add Reflection with Motivational Quotes | Users can submit a message via the contact form, which stores their name, email, and message in the database. | ![screenshot](documentation/features/contact.png) |
+| Add Reflection with Motivational Quotes | Users can submit a message via the contact form, which stores their name, email, and message in the database. | ![screenshot](documentation/features/add-reflection-and-quotes.png) |
+| Quotes | While writing reflection users can read one of the randomly selected quotes. Every time user gets to the form to submit reflection, different randomly chosen quote will display | ![screenshot](documentation/features/quotes.png) |
 | User Feedback | Clear and concise Django messages are used to provide feedback to users when interacting with various features (e.g., adding products to the bag, checking out, etc.). | ![screenshot](documentation/features/user-feedback.png) |
 | Heroku Deployment | The site is deployed to Heroku, making it accessible online for users. | ![screenshot](documentation/features/deployed-to-heroku.png) |
 | SEO | SEO optimization with a sitemap.xml, robots.txt, and appropriate meta tags to improve search engine visibility. | ![screenshot](documentation/features/SEO.png) |
@@ -444,7 +445,7 @@ Reflection
 
 [GitHub Projects](https://www.github.com/Rubina1978/native-spirit-studio/projects) served as an Agile tool for this project. Through it, EPICs, User Stories, issues/bugs, and Milestone tasks were planned, then subsequently tracked on a regular basis using the Kanban project board.
 
-![screenshot](documentation/gh-projects.png)
+![screenshot](documentation/agile_development/screenshot-projects.png)
 
 ### GitHub Issues
 
@@ -724,14 +725,6 @@ There are no remaining major differences between the local version when compared
 ## Credits
 
 ### Content
-
-⚠️ INSTRUCTIONS ⚠️
-
-Use this space to provide attribution links for any borrowed code snippets, elements, and resources. Ideally, you should provide an actual link to every resource used, not just a generic link to the main site. If you've used multiple components from the same source (such as Bootstrap), then you only need to list it once, but if it's multiple Codepen samples, then you should list each example individually. If you've used AI for some assistance (such as ChatGPT or Perplexity), be sure to mention that as well. A few examples have been provided below to give you some ideas.
-
-Eventually you'll want to learn how to use Git branches. Here's a helpful tutorial called [Learn Git Branching](https://learngitbranching.js.org) to bookmark for later.
-
-⚠️ --- END ---⚠️
 
 | Source | Notes |
 | --- | --- |
