@@ -29,4 +29,4 @@ urlpatterns = [
     path('profile/', include('profiles.urls')),
     path('journal/', include('journal.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
-# handler404 = 'native_spirit_studio.views.handler404'
+handler404 = 'native_spirit_studio.views.handler404'
