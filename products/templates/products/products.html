@@ -147,6 +147,7 @@
 
 
 <script>
+    /* jshint esversion: 11, jquery: true */
     $('#sort-selector').change(function() {
         var selector = $(this);
         var currentUrl = new URL(window.location);
@@ -162,9 +163,9 @@
             currentUrl.searchParams.delete('sort');
             currentUrl.searchParams.delete('direction');
 
-            window.location.replace(currentUrl)
+            window.location.replace(currentUrl);
         }
 
-    })
+    });
 </script>
 {% endblock %}

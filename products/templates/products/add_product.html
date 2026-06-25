@@ -46,6 +46,7 @@
 {% block postloadjs %}
     {{ block.super }}
     <script>
+       /* jshint esversion: 11, jquery: true */ 
         $('#id_image').change(function() {
             var file = $('#id_image')[0].files[0];
             $('#filename').text(`Image will be set to: ${file.name}`);

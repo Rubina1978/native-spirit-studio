@@ -124,12 +124,12 @@
 {{ block.super }}
 {% include 'products/includes/quantity_input_script.html' %}
 <script>
-    
+    /* jshint esversion: 11, jquery: true */
     // Update quantity on click
     $('.update-link').click(function(e) {
         var form = $(this).prev('.update-form');
         form.submit();
-    })
+    });
 
     // Remove item and reload on click
     $('.remove-item').click(function(e) {
@@ -139,10 +139,10 @@
         var size = $(this).data('size');
         var url = `/bag/remove/${itemId}/`;
         var data = {'csrfmiddlewaretoken': csrfToken, 'size_id': size};
-        $.post(url, data)
+        $.post(url, data);
          .done(function() {
              location.reload();
          });
-    })
+    });
 </script>
 {% endblock %}
