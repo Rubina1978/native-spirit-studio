@@ -16,7 +16,7 @@
 {% endblock %}
 
 {% block content %}
-    <div class="overlay"></div>
+<div class="overlay"></div>
     <div class="container">
         <div class="row">
             <div class="col mt-3">
@@ -26,56 +26,53 @@
         </div>
         <div class="row">
             <div class="col">
-                 <a href="{% url 'add_reflection' %}" class="btn btn-info mb-4 ">
+                <a href="{% url 'add_reflection' %}" class="btn btn-info mb-4 ">
                 Add Reflection
-            </a>
+                </a>
             </div>
         </div>
         <div class="row">
             {% for reflection in reflections %}
             <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <div class="card shadow-sm">
+                    <img src="{% static 'journal/images/card-image.jpg' %}"
+                        class="card-img-top"
+                        alt="Journal reflection">
 
-    <div class="card shadow-sm">
-        <img src="{% static 'journal/images/card-image.jpg' %}"
-             class="card-img-top"
-             alt="Journal reflection">
+                    <div class="card-body">
+                    <p>
+                            <strong><span class="badge badge text-muted  mr-2">Date: {{ reflection.created_on}}</span></strong>
+                        
+                        </p>
+                        <hr>
+                    
+                        <p class="mb-3"><span class="badge badge-info mr-2">Mood</span>
+                            {{ reflection.mood }}
+                        </p>
+                        
+                    <p><span class="badge bg-success text-white">Happy Moment</span>
+                            {{ reflection.happy_moment }}
+                        </p>
+                    
+                        <p class="mb-3"><span class="badge badge-warning mr-2">Challenge:</span>
+                            {{ reflection.challenge }}
+                        </p>
+                        
+                        <p class="mb-3"><span class="badge badge-secondary mr-2">Notes:</span>
+                            {{ reflection.notes }}
+                        </p>
+                        
+                    </div>     
+                    
+                </div>
 
-        <div class="card-body">
-           <p>
-                <strong><span class="badge badge text-muted  mr-2">Date: {{ reflection.created_on}}</span></strong>
-               
-            </p>
-            <hr>
-           
-            <p class="mb-3"><span class="badge badge-info mr-2">Mood</span>
-                {{ reflection.mood }}
-            </p>
-            
-           <p><span class="badge bg-success text-white">Happy Moment</span>
-                {{ reflection.happy_moment }}
-            </p>
-           
-            <p class="mb-3"><span class="badge badge-warning mr-2">Challenge:</span>
-                {{ reflection.challenge }}
-            </p>
-            
-            <p class="mb-3"><span class="badge badge-secondary mr-2">Notes:</span>
-                {{ reflection.notes }}
-            </p>
-            
-        </div>     
-           
-    </div>
-
-    <div class="mt-2 d-flex gap-2 justify-content-end">
-        <a href="{% url 'edit_reflection' reflection.id %}" class="btn btn-info btn-sm mr-2">Edit</a>
-        <a href="{% url 'delete_reflection' reflection.id %}" class="btn btn-danger btn-sm">Delete</a>
-    </div>
-
-</div>
+                <div class="mt-2 d-flex gap-2 justify-content-end">
+                    <a href="{% url 'edit_reflection' reflection.id %}" class="btn btn-info btn-sm mr-2">Edit</a>
+                    <a href="{% url 'delete_reflection' reflection.id %}" class="btn btn-danger btn-sm">Delete</a>
+                </div>
+            </div>
             {% endfor %}
         </div>
-    </div>
-</div>            
+    </div>           
                
 {% endblock %}
