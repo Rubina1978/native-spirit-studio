@@ -66,7 +66,7 @@ I have used the recommended [HTML W3C Validator](https://validator.w3.org) to va
 | products | [product_detail.html](https://github.com/Rubina1978/native-spirit-studio/blob/main/products/templates/products/product_detail.html) | [w3c](https://validator.w3.org/nu/?doc=https%3A%2F%2Fnative-spirit-studio-3057c5b47433.herokuapp.com%2Fproducts%2F26%2F) | ![screenshot](documentation/code_validation/product-details-w3c.png) | n/a |
 | products | [products.html](https://github.com/Rubina1978/native-spirit-studio/blob/main/products/templates/products/products.html) | [w3c](https://validator.w3.org/nu/?doc=https%3A%2F%2Fnative-spirit-studio-3057c5b47433.herokuapp.com%2Fproducts%2F) | ![screenshot](documentation/code_validation/products-w3c.png) | n/a |
 | profiles | [profile.html](https://github.com/Rubina1978/native-spirit-studio/blob/main/profiles/templates/profiles/profile.html) | [w3c](https://validator.w3.org/nu/?doc=https%3A%2F%2Fnative-spirit-studio-3057c5b47433.herokuapp.com%2Fprofile%2F) | ![screenshot](documentation/code_validation/profile-w3c.png) | n/a |
-| templates | [404.html](https://github.com/Rubina1978/native-spirit-studio/blob/main/templates/errors/404.html) | n/a | ![screenshot](documentation/code_validation/page-404-w3c.png) | n/a |
+
 
 
 ### CSS
@@ -92,10 +92,10 @@ I have used the recommended [CSS Jigsaw Validator](https://jigsaw.w3.org/css-val
 
 | Directory | File | URL | Screenshot | Notes |
 | --- | --- | --- | --- | --- |
-| checkout | [checkout.css](https://github.com/Rubina1978/native-spirit-studio/blob/main/checkout/static/checkout/css/checkout.css) | ⚠️ Link (if applicable) | ![screenshot](documentation/validation/css-checkout-checkout.png) | ⚠️ Notes (if applicable) |
-| journal | [journal.css](https://github.com/Rubina1978/native-spirit-studio/blob/main/journal/static/journal/css/journal.css) | ⚠️ Link (if applicable) | ![screenshot](documentation/validation/css-journal-journal.png) | ⚠️ Notes (if applicable) |
-| profiles | [profile.css](https://github.com/Rubina1978/native-spirit-studio/blob/main/profiles/static/profiles/css/profile.css) | ⚠️ Link (if applicable) | ![screenshot](documentation/validation/css-profiles-profile.png) | ⚠️ Notes (if applicable) |
-| static | [base.css](https://github.com/Rubina1978/native-spirit-studio/blob/main/static/css/base.css) | ⚠️ Link (if applicable) | ![screenshot](documentation/validation/css-static-base.png) | ⚠️ Notes (if applicable) |
+| checkout | [checkout.css](https://github.com/Rubina1978/native-spirit-studio/blob/main/checkout/static/checkout/css/checkout.css) | n/a| ![screenshot](documentation\css_validators\checkout-css-w3c.png) | all ok |
+| journal | [journal.css](https://github.com/Rubina1978/native-spirit-studio/blob/main/journal/static/journal/css/journal.css) | n/a | ![screenshot](documentation\css_validators\journal-css-w3c.png) | all ok |
+| profiles | [profile.css](https://github.com/Rubina1978/native-spirit-studio/blob/main/profiles/static/profiles/css/profile.css) | n/a | ![screenshot](documentation\css_validators\profile-css-23c.png) | all ok|
+| static | [base.css](https://github.com/Rubina1978/native-spirit-studio/blob/main/static/css/base.css) | [w3c](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fnative-spirit-studio-3057c5b47433.herokuapp.com%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en) | ![screenshot](documentation\css_validators\base-css-validation.png) | all ok|
 
 
 ### JavaScript
