@@ -1,11 +1,11 @@
 <div class="collapse navbar-collapse" id="main-nav">
     <ul class="navbar-nav w-auto mx-auto">
         <li class="nav-item d-block d-lg-none">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'home' %}" id="home-link">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5 options" href="{% url 'home' %}" id="home-link">
                 Home</a>
         </li>
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5 options" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 All products</a>
             <div class="dropdown-menu border-0">
                 <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">by price</a>
@@ -15,7 +15,7 @@
             </div>
         </li>
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="jewellery-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5 options" href="#" id="jewellery-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Jewellery</a>
             <div class="dropdown-menu border-0">
                 <a href="{% url 'products' %}?category=necklaces" class="dropdown-item">Necklaces</a>
@@ -25,7 +25,7 @@
             </div>
         </li>
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="home-decor-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5 options" href="#" id="home-decor-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Home & decor</a>
             <div class="dropdown-menu border-0">
                 <a href="{% url 'products' %}?category=dreamcatchers" class="dropdown-item">Dream Catchers</a>
@@ -35,7 +35,7 @@
             </div>
         </li>
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="wellness-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5 options" href="#" id="wellness-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Wellness</a>
             <div class="dropdown-menu border-0">
                 <a href="{% url 'products' %}?category=teas" class="dropdown-item">Teas</a>
@@ -45,7 +45,7 @@
             </div>
         </li>
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="specials-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5 options" href="#" id="specials-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Special Offers</a>
             <div class="dropdown-menu border-0">
                 <a href="{% url 'products' %}?category=new_arrivals" class="dropdown-item">New Arrivals</a>
