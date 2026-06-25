@@ -31,7 +31,7 @@
                 <div class="product-details-container mb-5 mt-md-5">
                     <p class="mb-0"><strong>{{ product.name }}</strong></p>
                     <p class="lead mb-0 text-left font-weight-bold">
-    {% comment%}allow_sizes part developed and implemented with github copilot {%endcomment %}
+                        {% comment%}allow_sizes part developed and implemented with github copilot {%endcomment %}
                         {% if allow_sizes and sizes %}
                             From £{{ product.get_lowest_size_price }}
                         {% else %}
@@ -111,9 +111,9 @@
                                 <input type="submit" class="btn btn-black rounded-0 text-uppercase mt-5" value="Add to Bag">
                             </div>
                             <input type="hidden" name="redirect_url" value="{{ request.path }}">
+                            </div>
                         </div>
                     </form>
-
                 </div>
            </div>
         </div>
