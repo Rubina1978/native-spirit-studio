@@ -221,20 +221,20 @@ I've tested my deployed project on multiple browsers to check for compatibility 
 
 | Page | Chrome | Firefox | Edge | Notes |
 | --- | --- | --- | --- | --- |
-| Register | ![screenshot](documentation\compatibility\register-chrome.png) | ![screenshot](documentation/browsers/firefox-register.png) | ![screenshot](documentation\responsiveness\register-desktop-resp.png) | Works as expected |
-| Login | ![screenshot](documentation\compatibility\login-chrome.png) | ![screenshot](documentation/browsers/firefox-login.png) | ![screenshot](documentation\responsiveness\login-desktop-resp.png) | Works as expected |
-| Profile | ![screenshot](documentation\compatibility\profile-chrome.png) | ![screenshot](documentation/browsers/firefox-profile.png) | ![screenshot](documentation\responsiveness\profile-desktop-resp.png) | Works as expected |
-| Home | ![screenshot](documentation\compatibility\home-chrome.png) | ![screenshot](documentation/browsers/firefox-home.png) | ![screenshot](documentation\responsiveness\home-desktop-resp.png) | Works as expected |
-| Products | ![screenshot](documentation\compatibility\products-chorme.png) | ![screenshot](documentation/browsers/firefox-products.png) | ![screenshot](documentation\responsiveness\products-desktop-resp.png) | Works as expected |
-| Product Details | ![screenshot](ddocumentation\compatibility\product-details-chrome.png) | ![screenshot](documentation/browsers/firefox-product-details.png) | ![screenshot](documentation\responsiveness\product-detail-desktop-resp.png) | Works as expected |
-| Bag | ![screenshot](documentation\compatibility\shopping-bag-chrome.png) | ![screenshot](documentation/browsers/firefox-bag.png) | ![screenshot](documentation\responsiveness\shopping-bag-desktop-resp.png) | Works as expected |
-| Checkout | ![screenshot](documentation\compatibility\checkout-chrome.png) | ![screenshot](documentation/browsers/firefox-checkout.png) | ![screenshot](documentation\responsiveness\checkout-desktop-resp.png) | Works as expected |
-| Checkout Success | ![screenshot](documentation\compatibility\checkout-success-chrome.png) | ![screenshot](documentation/browsers/firefox-checkout-success.png) | ![screenshot](documentation\responsiveness\checkout-success-desktop-resp.png) | Works as expected |
-| Add Product | ![screenshot](documentation\compatibility\add-product-chrome.png) | ![screenshot](documentation/browsers/firefox-add-product.png) | ![screenshot](documentation\responsiveness\add-product-desktop.png) | Works as expected |
-| Edit Product | ![screenshot](documentation\compatibility\edit-product-chrome.png) | ![screenshot](documentation/browsers/firefox-edit-product.png) | ![screenshot](documentation\responsiveness\edit-product-desktop-resp.png) | Works as expected |
-| Journal | ![screenshot](documentation\compatibility\journal-chrome.png) | ![screenshot](documentation/browsers/firefox-newsletter.png) | ![screenshot](documentation\responsiveness\journal-desktop-resp.png) | Works as expected |
-| Add Reflection | ![screenshot](documentation\compatibility\add-reflextion-chrome.png) | ![screenshot](documentation/browsers/firefox-contact.png) | ![screenshot](documentation\responsiveness\add-reflection-desktop-resp.png) | Works as expected |
-| 404 | ![screenshot](documentation\compatibility\page-404-chrome.png) | ![screenshot](documentation/browsers/firefox-404.png) | ![screenshot](documentation\responsiveness\page-404-desktop-resp.png) | Works as expected |
+| Register | ![screenshot](documentation/compatibility/register-chrome.png) | ![screenshot](documentation/compatibility/register-firefox.png) | ![screenshot](documentation/responsiveness/register-desktop-resp.png) | Works as expected |
+| Login | ![screenshot](documentation/compatibility/login-chrome.png) | ![screenshot](documentation/compatibility/login-firefox.png) | ![screenshot](documentation/responsiveness/login-desktop-resp.png) | Works as expected |
+| Profile | ![screenshot](documentation/compatibility/profile-chrome.png) | ![screenshot](documentation/compatibility/profile-firefox.png) | ![screenshot](documentation/responsiveness/profile-desktop-resp.png) | Works as expected |
+| Home | ![screenshot](documentation/compatibility/home-chrome.png) | ![screenshot](documentation/compatibility/home-firefox.png) | ![screenshot](documentation/responsiveness/home-desktop-resp.png) | Works as expected |
+| Products | ![screenshot](documentation/compatibility/products-chorme.png) | ![screenshot](documentation/compatibility/products-firefox.png) | ![screenshot](documentation/responsiveness/products-desktop-resp.png) | Works as expected |
+| Product Details | ![screenshot](documentation/compatibility/product-details-chrome.png) | ![screenshot](documentation/compatibility/product-details-firefox.png) | ![screenshot](documentation/responsiveness/product-detail-desktop-resp.png) | Works as expected |
+| Bag | ![screenshot](documentation/compatibility/shopping-bag-chrome.png) | ![screenshot](documentation/compatibility/shopping-bag-firefox.png) | ![screenshot](documentation/responsiveness/shopping-bag-desktop-resp.png) | Works as expected |
+| Checkout | ![screenshot](documentation/compatibility/checkout-chrome.png) | ![screenshot](documentation/compatibility/checkout-firefox.png) | ![screenshot](documentation/responsiveness/checkout-desktop-resp.png) | Works as expected |
+| Checkout Success | ![screenshot](documentation/compatibility/checkout-success-chrome.png) | ![screenshot](documentation/compatibility/checkout-success-firefox.png) | ![screenshot](documentation/responsiveness/checkout-success-desktop-resp.png) | Works as expected |
+| Add Product | ![screenshot](documentation/compatibility/add-product-chrome.png) | ![screenshot](documentation/compatibility/add-product-firefox.png) | ![screenshot](documentation/responsiveness/add-product-desktop.png) | Works as expected |
+| Edit Product | ![screenshot](documentation/compatibility/edit-product-chrome.png) | ![screenshot](documentation/compatibility/edit-product-firefox.png) | ![screenshot](documentation/responsiveness/edit-product-desktop-resp.png) | Works as expected |
+| Journal | ![screenshot](documentation/compatibility/journal-chrome.png) | ![screenshot](documentation/compatibility/journal-firefox.png) | ![screenshot](documentation/responsiveness/journal-desktop-resp.png) | Works as expected |
+| Add Reflection | ![screenshot](documentation/compatibility/add-reflextion-chrome.png) | ![screenshot](documentation/compatibility/add-reflection-firefox.png) | ![screenshot](documentation/responsiveness/add-reflection-desktop-resp.png) | Works as expected |
+| 404 | ![screenshot](documentation/compatibility/page-404-chrome.png) | ![screenshot](documentation/compatibility/page-404-firefox.png) | ![screenshot](documentation/responsiveness/page-404-desktop-resp.png) | Works as expected |
 
 ## Lighthouse Audit
 
