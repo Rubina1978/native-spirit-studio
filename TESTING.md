@@ -178,29 +178,11 @@ I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com
 
 ## Responsiveness
 
-⚠️ INSTRUCTIONS ⚠️
-
-Use this space to discuss testing the live/deployed site on various device sizes.
-
-The minimum requirement is to test the following 3 sizes:
-
-- Mobile
-- Tablet
-- Desktop
-
-**IMPORTANT**: You must provide screenshots of your results, to "prove" that you've actually tested them.
-
-Using the [amiresponsive](http://ami.responsivedesign.is) mockup images (*or similar*) does not meet the requirements. Consider using some of the built-in device sizes from the Developer Tools.
-
-If you have tested the project on your actual mobile phone or tablet, consider also including screenshots of these as well. It showcases a higher level of manual tests, and can be seen as a positive inclusion!
-
-⚠️ --- END --- ⚠️
-
 I've tested my deployed project to check for responsiveness issues.
 
 | Page | Mobile | Tablet | Desktop | Notes |
 | --- | --- | --- | --- | --- |
-| Register | ![screenshot](documentation/responsiveness/mobile-register.png) | ![screenshot](documentation/responsiveness/register-tablet-resp.png) | ![screenshot](documentation/responsiveness/register-desktop-resp.png) | Works as expected |
+| Register | ![screenshot](documentation/responsiveness/register-responsiveness.png) | ![screenshot](documentation/responsiveness/register-tablet-resp.png) | ![screenshot](documentation/responsiveness/register-desktop-resp.png) | Works as expected |
 | Login | ![screenshot](documentation/responsiveness/login-mobile-resp.png) | ![screenshot](documentation/responsiveness/login-tablet-resp.png) | ![screenshot](documentation/responsiveness/login-desktop-resp.png) | Works as expected |
 | Profile | ![screenshot](documentation/responsiveness/profile-mobile-resp.png) | ![screenshot](documentation/responsiveness/profile-tablet-resp.png) | ![screenshot](documentation/responsiveness/profile-desktop-resp.png) | Works as expected |
 | Home | ![screenshot](documentation/responsiveness/home-mobile-resp.png) | ![screenshot](documentation/responsiveness/home-tablet-resp.png) | ![screenshot](documentation/responsiveness/home-desktop-resp.png) | Works as expected |
@@ -213,7 +195,7 @@ I've tested my deployed project to check for responsiveness issues.
 | Edit Product | ![screenshot](documentation/responsiveness/edit-product-mobile-resp.png) | ![screenshot](documentation/responsiveness/edit-product-tablet-resp.png) | ![screenshot](documentation/responsiveness/edit-product-desktop-resp.png) | Works as expected |
 | Journal | ![screenshot](documentation/responsiveness/journal-mobile.png) | ![screenshot](documentation/responsiveness/journal-tablet-resp.png) | ![screenshot](documentation/responsiveness/journal-desktop-resp.png) | Works as expected |
 | Add Reflection | ![screenshot](documentation/responsiveness/add-reflection-mobile-resp.png) | ![screenshot](documentation/responsiveness/add-reflection-tablet-resp.png) | ![screenshot](documentation/responsiveness/add-reflection-desktop-resp.png) | Works as expected |
-| 404 | ![screenshot](documentation/responsiveness/page-404-mobile-resp.png) | ![screenshot](documentation/responsiveness/page-404-tablet-resp.png) | ![screenshot](ddocumentation/responsiveness/page-404-desktop-resp.png) | Works as expected |
+| 404 | ![screenshot](documentation/responsiveness/page-404-mobile-resp.png) | ![screenshot](documentation/responsiveness/page-404-tablet-resp.png) | ![screenshot](documentation/responsiveness/page-404-desktop-resp.png) | Works as expected |
 
 ## Browser Compatibility
 
@@ -237,22 +219,22 @@ Please note, there are services out there that can test multiple browser compati
 
 I've tested my deployed project on multiple browsers to check for compatibility issues.
 
-| Page | Chrome | Firefox | Safari | Notes |
+| Page | Chrome | Firefox | Edge | Notes |
 | --- | --- | --- | --- | --- |
-| Register | ![screenshot](documentation/browsers/chrome-register.png) | ![screenshot](documentation/browsers/firefox-register.png) | ![screenshot](documentation/browsers/safari-register.png) | Works as expected |
-| Login | ![screenshot](documentation/browsers/chrome-login.png) | ![screenshot](documentation/browsers/firefox-login.png) | ![screenshot](documentation/browsers/safari-login.png) | Works as expected |
-| Profile | ![screenshot](documentation/browsers/chrome-profile.png) | ![screenshot](documentation/browsers/firefox-profile.png) | ![screenshot](documentation/browsers/safari-profile.png) | Works as expected |
-| Home | ![screenshot](documentation/browsers/chrome-home.png) | ![screenshot](documentation/browsers/firefox-home.png) | ![screenshot](documentation/browsers/safari-home.png) | Works as expected |
-| Products | ![screenshot](documentation/browsers/chrome-products.png) | ![screenshot](documentation/browsers/firefox-products.png) | ![screenshot](documentation/browsers/safari-products.png) | Works as expected |
-| Product Details | ![screenshot](documentation/browsers/chrome-product-details.png) | ![screenshot](documentation/browsers/firefox-product-details.png) | ![screenshot](documentation/browsers/safari-product-details.png) | Works as expected |
-| Bag | ![screenshot](documentation/browsers/chrome-bag.png) | ![screenshot](documentation/browsers/firefox-bag.png) | ![screenshot](documentation/browsers/safari-bag.png) | Works as expected |
-| Checkout | ![screenshot](documentation/browsers/chrome-checkout.png) | ![screenshot](documentation/browsers/firefox-checkout.png) | ![screenshot](documentation/browsers/safari-checkout.png) | Works as expected |
-| Checkout Success | ![screenshot](documentation/browsers/chrome-checkout-success.png) | ![screenshot](documentation/browsers/firefox-checkout-success.png) | ![screenshot](documentation/browsers/safari-checkout-success.png) | Works as expected |
-| Add Product | ![screenshot](documentation/browsers/chrome-add-product.png) | ![screenshot](documentation/browsers/firefox-add-product.png) | ![screenshot](documentation/browsers/safari-add-product.png) | Works as expected |
-| Edit Product | ![screenshot](documentation/browsers/chrome-edit-product.png) | ![screenshot](documentation/browsers/firefox-edit-product.png) | ![screenshot](documentation/browsers/safari-edit-product.png) | Works as expected |
-| Newsletter | ![screenshot](documentation/browsers/chrome-newsletter.png) | ![screenshot](documentation/browsers/firefox-newsletter.png) | ![screenshot](documentation/browsers/safari-newsletter.png) | Works as expected |
-| Contact | ![screenshot](documentation/browsers/chrome-contact.png) | ![screenshot](documentation/browsers/firefox-contact.png) | ![screenshot](documentation/browsers/safari-contact.png) | Works as expected |
-| 404 | ![screenshot](documentation/browsers/chrome-404.png) | ![screenshot](documentation/browsers/firefox-404.png) | ![screenshot](documentation/browsers/safari-404.png) | Works as expected |
+| Register | ![screenshot](documentation\compatibility\register-chrome.png) | ![screenshot](documentation/browsers/firefox-register.png) | ![screenshot](documentation\responsiveness\register-desktop-resp.png) | Works as expected |
+| Login | ![screenshot](documentation\compatibility\login-chrome.png) | ![screenshot](documentation/browsers/firefox-login.png) | ![screenshot](documentation\responsiveness\login-desktop-resp.png) | Works as expected |
+| Profile | ![screenshot](documentation\compatibility\profile-chrome.png) | ![screenshot](documentation/browsers/firefox-profile.png) | ![screenshot](documentation\responsiveness\profile-desktop-resp.png) | Works as expected |
+| Home | ![screenshot](documentation\compatibility\home-chrome.png) | ![screenshot](documentation/browsers/firefox-home.png) | ![screenshot](documentation\responsiveness\home-desktop-resp.png) | Works as expected |
+| Products | ![screenshot](documentation\compatibility\products-chorme.png) | ![screenshot](documentation/browsers/firefox-products.png) | ![screenshot](documentation\responsiveness\products-desktop-resp.png) | Works as expected |
+| Product Details | ![screenshot](ddocumentation\compatibility\product-details-chrome.png) | ![screenshot](documentation/browsers/firefox-product-details.png) | ![screenshot](documentation\responsiveness\product-detail-desktop-resp.png) | Works as expected |
+| Bag | ![screenshot](documentation\compatibility\shopping-bag-chrome.png) | ![screenshot](documentation/browsers/firefox-bag.png) | ![screenshot](documentation\responsiveness\shopping-bag-desktop-resp.png) | Works as expected |
+| Checkout | ![screenshot](documentation\compatibility\checkout-chrome.png) | ![screenshot](documentation/browsers/firefox-checkout.png) | ![screenshot](documentation\responsiveness\checkout-desktop-resp.png) | Works as expected |
+| Checkout Success | ![screenshot](documentation\compatibility\checkout-success-chrome.png) | ![screenshot](documentation/browsers/firefox-checkout-success.png) | ![screenshot](documentation\responsiveness\checkout-success-desktop-resp.png) | Works as expected |
+| Add Product | ![screenshot](documentation\compatibility\add-product-chrome.png) | ![screenshot](documentation/browsers/firefox-add-product.png) | ![screenshot](documentation\responsiveness\add-product-desktop.png) | Works as expected |
+| Edit Product | ![screenshot](documentation\compatibility\edit-product-chrome.png) | ![screenshot](documentation/browsers/firefox-edit-product.png) | ![screenshot](documentation\responsiveness\edit-product-desktop-resp.png) | Works as expected |
+| Journal | ![screenshot](documentation\compatibility\journal-chrome.png) | ![screenshot](documentation/browsers/firefox-newsletter.png) | ![screenshot](documentation\responsiveness\journal-desktop-resp.png) | Works as expected |
+| Add Reflection | ![screenshot](documentation\compatibility\add-reflextion-chrome.png) | ![screenshot](documentation/browsers/firefox-contact.png) | ![screenshot](documentation\responsiveness\add-reflection-desktop-resp.png) | Works as expected |
+| 404 | ![screenshot](documentation\compatibility\page-404-chrome.png) | ![screenshot](documentation/browsers/firefox-404.png) | ![screenshot](documentation\responsiveness\page-404-desktop-resp.png) | Works as expected |
 
 ## Lighthouse Audit
 
