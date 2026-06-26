@@ -242,20 +242,20 @@ I've tested my deployed project using the Lighthouse Audit tool to check for any
 
 | Page | Mobile | Desktop |
 | --- | --- | --- |
-| Register | ![screenshot](documentation/lighthouse/mobile-register.png) | ![screenshot](documentation/lighthouse/desktop-register.png) |
-| Login | ![screenshot](documentation/lighthouse/mobile-login.png) | ![screenshot](documentation/lighthouse/desktop-login.png) |
-| Profile | ![screenshot](documentation/lighthouse/mobile-profile.png) | ![screenshot](documentation/lighthouse/desktop-profile.png) |
-| Home | ![screenshot](documentation/lighthouse/mobile-home.png) | ![screenshot](documentation/lighthouse/desktop-home.png) |
-| Products | ![screenshot](documentation/lighthouse/mobile-products.png) | ![screenshot](documentation/lighthouse/desktop-products.png) |
-| Product Details | ![screenshot](documentation/lighthouse/mobile-product-details.png) | ![screenshot](documentation/lighthouse/desktop-product-details.png) |
-| Bag | ![screenshot](documentation/lighthouse/mobile-bag.png) | ![screenshot](documentation/lighthouse/desktop-bag.png) |
-| Checkout | ![screenshot](documentation/lighthouse/mobile-checkout.png) | ![screenshot](documentation/lighthouse/desktop-checkout.png) |
-| Checkout Success | ![screenshot](documentation/lighthouse/mobile-checkout-success.png) | ![screenshot](documentation/lighthouse/desktop-checkout-success.png) |
-| Add Product | ![screenshot](documentation/lighthouse/mobile-add-product.png) | ![screenshot](documentation/lighthouse/desktop-add-product.png) |
-| Edit Product | ![screenshot](documentation/lighthouse/mobile-edit-product.png) | ![screenshot](documentation/lighthouse/desktop-edit-product.png) |
-| Newsletter | ![screenshot](documentation/lighthouse/mobile-newsletter.png) | ![screenshot](documentation/lighthouse/desktop-newsletter.png) |
-| Contact | ![screenshot](documentation/lighthouse/mobile-contact.png) | ![screenshot](documentation/lighthouse/desktop-contact.png) |
-| 404 | ![screenshot](documentation/lighthouse/mobile-404.png) | ![screenshot](documentation/lighthouse/desktop-404.png) |
+| Register | ![screenshot](documentation\lighthouse\register-mobile.png) | ![screenshot](documentation/lighthouse/desktop-register.png) |
+| Login | ![screenshot](documentation\lighthouse\signin-mobile.png) | ![screenshot](documentation/lighthouse/desktop-login.png) |
+| Profile | ![screenshot](documentation\lighthouse\profile.png) | ![screenshot](documentation/lighthouse/desktop-profile.png) |
+| Home | ![screenshot](documentation\lighthouse\home-mobile.png) | ![screenshot](documentation/lighthouse/desktop-home.png) |
+| Products | ![screenshot](documentation\lighthouse\products-mobile.png) | ![screenshot](documentation/lighthouse/desktop-products.png) |
+| Product Details | ![screenshot](documentation\lighthouse\product-detail.png) | ![screenshot](documentation/lighthouse/desktop-product-details.png) |
+| Bag | ![screenshot](documentation\lighthouse\shopping-bag.png) | ![screenshot](documentation/lighthouse/desktop-bag.png) |
+| Checkout | ![screenshot](documentation\lighthouse\checkout-mobile.png) | ![screenshot](documentation/lighthouse/desktop-checkout.png) |
+| Checkout Success | ![screenshot](ddocumentation\lighthouse\checkout-success-mobile.png) | ![screenshot](documentation/lighthouse/desktop-checkout-success.png) |
+| Add Product | ![screenshot](documentation\lighthouse\add-product-mobile.png) | ![screenshot](documentation/lighthouse/desktop-add-product.png) |
+| Edit Product | ![screenshot](documentation\lighthouse\edit-product-mobile.png) | ![screenshot](documentation/lighthouse/desktop-edit-product.png) |
+| Journal | ![screenshot](documentation\lighthouse\journal-mobile.png) | ![screenshot](documentation/lighthouse/desktop-newsletter.png) |
+| Add reflection | ![screenshot](documentation\lighthouse\add-reflection-mobile.png) | ![screenshot](documentation/lighthouse/desktop-contact.png) |
+| 404 | ![screenshot](documentation\lighthouse\page-404-mobile.png) | ![screenshot](documentation/lighthouse/desktop-404.png) |
 
 ## Defensive Programming
 
