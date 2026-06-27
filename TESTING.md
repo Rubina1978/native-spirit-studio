@@ -242,20 +242,20 @@ I've tested my deployed project using the Lighthouse Audit tool to check for any
 
 | Page | Mobile | Desktop |
 | --- | --- | --- |
-| Register | ![screenshot](documentation\lighthouse\register-mobile.png) | ![screenshot](documentation/lighthouse/desktop-register.png) |
-| Login | ![screenshot](documentation\lighthouse\signin-mobile.png) | ![screenshot](documentation/lighthouse/desktop-login.png) |
-| Profile | ![screenshot](documentation\lighthouse\profile.png) | ![screenshot](documentation/lighthouse/desktop-profile.png) |
-| Home | ![screenshot](documentation\lighthouse\home-mobile.png) | ![screenshot](documentation/lighthouse/desktop-home.png) |
-| Products | ![screenshot](documentation\lighthouse\products-mobile.png) | ![screenshot](documentation/lighthouse/desktop-products.png) |
-| Product Details | ![screenshot](documentation\lighthouse\product-detail.png) | ![screenshot](documentation/lighthouse/desktop-product-details.png) |
-| Bag | ![screenshot](documentation\lighthouse\shopping-bag.png) | ![screenshot](documentation/lighthouse/desktop-bag.png) |
-| Checkout | ![screenshot](documentation\lighthouse\checkout-mobile.png) | ![screenshot](documentation/lighthouse/desktop-checkout.png) |
-| Checkout Success | ![screenshot](ddocumentation\lighthouse\checkout-success-mobile.png) | ![screenshot](documentation/lighthouse/desktop-checkout-success.png) |
-| Add Product | ![screenshot](documentation\lighthouse\add-product-mobile.png) | ![screenshot](documentation/lighthouse/desktop-add-product.png) |
-| Edit Product | ![screenshot](documentation\lighthouse\edit-product-mobile.png) | ![screenshot](documentation/lighthouse/desktop-edit-product.png) |
-| Journal | ![screenshot](documentation\lighthouse\journal-mobile.png) | ![screenshot](documentation/lighthouse/desktop-newsletter.png) |
-| Add reflection | ![screenshot](documentation\lighthouse\add-reflection-mobile.png) | ![screenshot](documentation/lighthouse/desktop-contact.png) |
-| 404 | ![screenshot](documentation\lighthouse\page-404-mobile.png) | ![screenshot](documentation/lighthouse/desktop-404.png) |
+| Register | ![screenshot](documentation/lighthouse/register-mobile.png) | ![screenshot](documentation/lighthouse/register-desktop.png) |
+| Login | ![screenshot](documentation/lighthouse/signin-mobile.png) | ![screenshot](documentation/lighthouse/signin-desktop.png) |
+| Profile | ![screenshot](documentation/lighthouse/profile.png) | ![screenshot](documentation/lighthouse/profile-desktop.png) |
+| Home | ![screenshot](documentation/lighthouse/home-mobile.png) | ![screenshot](documentation/lighthouse/home-desktop.png) |
+| Products | ![screenshot](documentation/lighthouse/products-mobile.png) | ![screenshot](documentation/lighthouse/products-desktop.png) |
+| Product Details | ![screenshot](documentation/lighthouse/product-detail.png) | ![screenshot](documentation/lighthouse/product-detail-desktop.png) |
+| Bag | ![screenshot](documentation/lighthouse/shopping-bag.png) | ![screenshot](documentation/lighthouse/shopping-bag-desktop.png) |
+| Checkout | ![screenshot](documentation/lighthouse/checkout-mobile.png) | ![screenshot](documentation/lighthouse/checkout-desktop.png) |
+| Checkout Success | ![screenshot](documentation/lighthouse/checkout-success-mobile.png) | ![screenshot](documentation/lighthouse/checkout-success-desktop.png) |
+| Add Product | ![screenshot](documentation/lighthouse/add-product-mobile.png) | ![screenshot](documentation/lighthouse/add-product-desktop.png) |
+| Edit Product | ![screenshot](documentation/lighthouse/edit-product-mobile.png) | ![screenshot](documentation/lighthouse/edit-product-desktop.png) |
+| Journal | ![screenshot](documentation/lighthouse/journal-mobile.png) | ![screenshot](documentation/lighthouse/journal-desktop.png) |
+| Add reflection | ![screenshot](documentation/lighthouse/add-reflection-mobile.png) | ![screenshot](documentation\lighthouse\add-reflection-desktop.png) |
+| 404 | ![screenshot](documentation/lighthouse/page-404-mobile.png) | ![screenshot](documentation/lighthouse/pAGE-404-desktop.png) |
 
 ## Defensive Programming
 
