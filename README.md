@@ -1,4 +1,4 @@
-# native-spirit-studio
+
 # [native-spirit-studio](https://native-spirit-studio-3057c5b47433.herokuapp.com)
 
 Developer: Hana Rubesova ([Rubina1978](https://www.github.com/Rubina1978))
@@ -156,7 +156,7 @@ I've used [Canva](https://canva.link/o2hicsh64mpbmf9) to design my site wirefram
 | As a customer | I would like to securely enter my card details using Stripe at checkout | so that I can confidently provide the information needed to make a purchase. |
 | As a returning customer | I would like have personal profile | keep track of my purchases and add my payment details
 
-##Acceptance Criteria. |
+## Acceptance Criteria 
 | As a returning customer | I would like the checkout process to remember my shipping address | so that future purchases are quicker and easier. |
 | As a site owner | I would like add new products with a name, description, size(if applicable) price, images, and category | so that I can keep the store up to date. |
 | As a site owner | I would like to update product details (name, price, size(if applicable), description, image, category) at any time | so that I can keep the store up to date. |
@@ -174,16 +174,23 @@ I've used [Canva](https://canva.link/o2hicsh64mpbmf9) to design my site wirefram
 | Register | Authentication is handled by allauth, allowing users to register accounts. | ![screenshot](documentation/features/register.png) |
 | Login | Authentication is handled by allauth, allowing users to log in to their existing accounts. | ![screenshot](documentation/features/login.png) |
 | Logout | Authentication is handled by allauth, allowing users to log out of their accounts. | ![screenshot](documentation/features/sign-out.png) |
+| See All Categories | User can see all product categories | ![screenshot](documentation/features/categories.png) |
 | Product List | Users can browse all available products with sorting, filtering by categories, and search functionality. | ![screenshot](documentation/features/product-listing.png) |
 | Product Details | Displays detailed information about a selected product, including its name, description, price, an image, and available sizes. | ![screenshot](documentation/features/product-details.png) |
+| Product Sorting | User can sort products by price, name, rating etc. | ![screenshot](documentation/defensive-programing/sorting-products-def-prog.png) |
+| Add Amount of products to shopping bag | User can modify the amount of products to be added to a shopping bag | ![screenshot](documentation/features/update-quantity.png) |
 | Add to Bag | Users can add items to their shopping bag, with support for selecting different sizes if applicable. | ![screenshot](documentation/features/add-to-shoppingbag.png) |
 | View Bag | Users can view the contents of their shopping bag, adjust quantities, or remove items. | ![screenshot](documentation/features/view-bag.png) |
+| Remove item from bag | Shopper can remove item from a shopping bag before proceeding to checkout | ![screenshot](documentation/features/remove-item-from-bag.png) |
+| Shipping Details remembered | User shipping details of user are captured and remembered for user's future visit | ![screenshot](documentation/defensive-programing/shipping-address-remembering.png) |
 | Checkout | Users can proceed to checkout, where they provide their delivery details and payment information using Stripe integration. | ![screenshot](documentation/features/checkout.png) |
 | Order Confirmation | Users receive an on-screen and email confirmation with details of their purchase. | ![screenshot](documentation/features/order-confirmation.png) |
 | Profile Management | Users can manage their profile information, including their default delivery address and order history. | ![screenshot](documentation/features/profile-management.png) |
 | Order History | Users can view their past orders and access details of each order, including products purchased and the delivery status. | ![screenshot](documentation/features/order-history.png) |
 | Product Management | Superusers can add, edit, and delete products from the site via a CRUD interface. | ![screenshot](documentation/features/product-management.png) |
 | Journal | Users can register their email address to receive newsletters from the site. Currently, this only stores the email in the database. | ![screenshot](documentation/features/journal.png) |
+| Managing Categories | Owner can manage categories to make sure products are correctly placed and easy to find for shoppers | ![screenshot](documentation\features\categories-for-owner.png) |
+| List of all orders | Owner of the site can see all orders made | ![screenshot](documentation/defensive-programing/all-orders-placed.png) |
 | Add Reflection with Motivational Quotes | Users can submit a message via the contact form, which stores their name, email, and message in the database. | ![screenshot](documentation/features/add-reflection-and-quotes.png) |
 | Quotes | While writing reflection users can read one of the randomly selected quotes. Every time user gets to the form to submit reflection, different randomly chosen quote will display | ![screenshot](documentation/features/quotes.png) |
 | User Feedback | Clear and concise Django messages are used to provide feedback to users when interacting with various features (e.g., adding products to the bag, checking out, etc.). | ![screenshot](documentation/features/user-feedback.png) |
@@ -717,7 +724,7 @@ By forking the GitHub Repository, you make a copy of the original repository on 
 
 ### Local VS Deployment
 
-During deployment, user registration creates accounts successfully but an unresolved issue occurs during the email verification process, resulting in a 500 error. SMTP configuration was tested successfully and emails can be sent through Django. If testing registration locally, emails are sent successfully and display in console, however, on the live site it shows error 500 and if attempt the registration with the same credentials again, an error shows on registration, that user with this credentials already exists. As a temporary measure for assessment purposes, email verification was disabled to allow examiners to register and access all functionality.
+During deployment, user registration creates accounts successfully but an unresolved issue occurs during the email verification process, resulting in a 500 error. SMTP configuration was tested successfully and emails can be sent through Django. If testing registration locally, emails are sent successfully and display in console, however, on the live site it shows error 500 and if attempt the registration with the same credentials again, an error shows on registration, that user with this credentials already exists. By researching Heroku CLI logs, this is understood to be due to the SMTP compatibility issue identified in production, email delivery could not be verified. This limitation is documented in the Known Issues section. As a temporary measure for assessment purposes, email verification was disabled to allow examiners to register and access all functionality.
 
 
 There are no remaining major differences between the local version when compared to the deployed version online.
@@ -768,6 +775,6 @@ There are no remaining major differences between the local version when compared
 - I would like to thank the [Code Institute](https://codeinstitute.net) Tutor Team for their assistance with troubleshooting and debugging some project issues.
 - I would like to thank  to [Code Institute Discord community](https://discord-portal.codeinstitute.net) for the moral support; it kept me going during periods of self doubt and impostor syndrome.
 - I would like to thank my friends, for believing in me, and being tolerant for me not socialising as much with them during the busy periods
-- I would like to thank trainer from EKC Collage [Rachel], for supporting me in my career development change towards becoming a software developer and giving moral support in times when deadline was announced too close to completion date of the course.
+- I would like to thank trainer from EKC College Rachel Furlong, for supporting me in my career development change towards becoming a software developer and giving moral support in times when deadline was announced too close to completion date of the course.
 - I would like to thank my mother for supporting me providing comfort when I thought I will give up and loose.
 
