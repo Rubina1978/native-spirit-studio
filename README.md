@@ -724,10 +724,8 @@ By forking the GitHub Repository, you make a copy of the original repository on 
 
 ### Local VS Deployment
 
-During deployment, user registration creates accounts successfully but an unresolved issue occurs during the email verification process, resulting in a 500 error. SMTP configuration was tested successfully and emails can be sent through Django. If testing registration locally, emails are sent successfully and display in console, however, on the live site it shows error 500 and if attempt the registration with the same credentials again, an error shows on registration, that user with this credentials already exists. By researching Heroku CLI logs, this is understood to be due to the SMTP compatibility issue identified in production, email delivery could not be verified. This limitation is documented in the Known Issues section. As a temporary measure for assessment purposes, email verification was disabled to allow examiners to register and access all functionality.
 
-
-There are no remaining major differences between the local version when compared to the deployed version online.
+There are no  major differences between the local version when compared to the deployed version online, apart from know issue with Product Management form noted in Know Issues of Testing.md section.
 
 ## Credits
 

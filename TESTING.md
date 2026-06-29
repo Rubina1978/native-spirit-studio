@@ -172,7 +172,7 @@ Defensive programming was manually tested with the below user acceptance testing
 | | Feature is expected to allow customers to view and manage their bag. | Opened the shopping bag page and edited cart contents. | Cart contents were displayed, updated, and removed correctly. | ![screenshot](documentation/defensive-programing/view-and-update-shoppingbag-def-prog.png) |
 | Checkout | Feature is expected to display bag items, grand total, and input fields for checkout. | Proceeded to checkout with items in the bag. | Checkout page displayed bag items, total, and input fields as expected. | ![screenshot](documentation/defensive-programing/checkout-def-prog.png) |
 | | Feature is expected to allow secure payment via Stripe. | Entered valid card details using Stripe at checkout. | Payment was processed securely, and an order confirmation page was displayed. | ![screenshot](documentation/defensive-programing/secure-stripe-payment-def-prog.png) |
-| | Feature is expected to send a confirmation email after purchase. | Completed a purchase and checked email inbox. | email with confirmation was received* | ![screenshot](documentation/defensive-programing/email-confirmation-def-prog.png) |
+| | Feature is expected to send a confirmation email after purchase. | Completed a purchase and checked email inbox. | email with confirmation was received | ![screenshot](documentation/defensive-programing/purchase-confirmation-email.png) |
 | | Feature is expected to display an order confirmation page with an order number. | Completed a purchase. | Order confirmation page displayed successfully with an order number. | ![screenshot](documentation/defensive-programing/order-number-and-confirmation.png) |
 | Account Management | Feature is expected to allow returning customers to log in and view past orders. | Logged in as a returning customer and accessed order history. | Past orders were displayed correctly in the account section. | ![screenshot](documentation/defensive-programing/past-orders.png) |
 | | Feature is expected to remember the shipping address for returning customers. | Completed multiple checkouts as a returning customer. | Shipping address was pre-filled on subsequent purchases. | ![screenshot](documentation/defensive-programing/shipping-address-remembering.png) |
@@ -282,12 +282,10 @@ Any remaining open issues can be tracked [here](https://www.github.com/Rubina197
 | Issue | Screenshot |
 | --- | --- |
 | The project is designed to be responsive from `375px` and upwards, in line with the material taught on the course LMS. Minor layout inconsistencies may occur on extra-wide (e.g. 4k/8k monitors), or smart-display devices (e.g. Nest Hub, Smart Watches, Gameboy Color, etc.), as these resolutions are outside the project’s scope, as taught by Code Institute. | ![screenshot](documentation/responsiveness/outside-of-scope-less-than-375.png) |
-| When validating HTML with a semantic `<section>` element, the validator warns about lacking a header `h2-h6`. This is acceptable. | ![screenshot] N/A
+| When validating HTML with a semantic `<section>` element, the validator warns about lacking a header `h2-h6`. This is acceptable. |  N/A
 | Validation errors on "signup.html" coming from the Django Allauth package. | ![screenshot]N/A |
 | With a known order-number, users can brute-force "checkout_success.html" and see potentially sensitive information. | ![screenshot](documentation/defensive-programing/order-number-and-confirmation.png) |
-| If a product is in your bag, but then gets deleted from the database, it throws errors from the session storage memory. | ![screenshot](documentation/issues/session-storage.png) |
-| The `-`/`+` quantity buttons work well on "product_details.html", but not on "bag.html". | ![screenshot](documentation/known-error.png) |
-| The functuality of email (including account verification and order confirmation emails) is currently disabled in production due to a compatibility issue between the project's dependencies and the Heroku runtime. Core functionality remains unaffected, and email support will be restored by upgrading project dependencies in a future update. | ![screenshot]N/A |
+| If a product is in your bag, but then gets deleted from the database, it throws errors from the session storage memory. | ![screenshot](documentation/known-error.png) |
 | Products with size variants display and function correctly throughout the store, including basket and checkout functionality. However, size variants cannot currently be created through the custom Product Management interface and must be added through the Django admin panel. Due time constrains this could not be resolved and has been identified as a future enhancement. | ![screenshot](documentation/features/product-management.png)
 
 
