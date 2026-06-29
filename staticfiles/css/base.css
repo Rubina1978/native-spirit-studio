@@ -1,15 +1,11 @@
 html, body {
-    height: 100%;
+    min-height: 100vh;
 }
  .lost{
     max-width: 100%;
     height: auto;
     max-height: 400px;
  }
-
- /* .container .error-page{
-    min-height: 55vh;
- } */
  
 body {
     background: url('/static/images/spiritual-wolf.png') no-repeat center center fixed;
@@ -17,9 +13,13 @@ body {
     height:calc(100vh - 164px);
     color: #181010;
     font-family: 'Lato', sans-serif;
-    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
 }
 
+main {
+    flex: 1;
+}
 .hero-text {
     color: #fff;
     text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
@@ -31,8 +31,6 @@ p {
     color: black;
 }
 
-
-
 /* from Bulma */
 .icon {
     align-items: center;
@@ -41,7 +39,9 @@ p {
     height: 1.5rem;
     width: 1.5rem;
 }
-
+h1 {
+    font-size: 1.5rem;
+}
 .logo-font {
     text-transform: uppercase;
 }
@@ -50,20 +50,29 @@ p {
     width: fit-content;
 }
 
+.deal {
+    font-size: 1.1rem;
+}
+
+.hero {
+    position:relative;
+   
+}
 /*chatgpt help withsolution*/
 .hero::before {
     content: "";
     position: absolute;
     inset: 0;
-    height: 130vh;
     background:
         linear-gradient(
             to right,
-            rgba(0,0,0,0.75) 0%,
-            rgba(0,0,0,0.45) 40%,
-            rgba(0,0,0,0.15) 100%
+            rgba(0,0,0,0.80) 0%,
+            rgba(0,0,0,0.50) 40%,
+            rgba(0,0,0,0.20) 100%
         );
+        
 }
+
 
 .shop-now-button {
     background: #e4ce97;
@@ -317,8 +326,9 @@ footer {
     background-color: #000000cb;
     bottom: 0;
     width: 100%;
-    padding: 1rem;
-    margin-top:2rem;
+    
+   
+    
 }
 
 
@@ -339,7 +349,9 @@ footer a:hover {
 footer a:focus,
 footer a:active {
     background-color: #b4b6b6 !important;
-    color: #000
+    color: #000;
+   
+    
 }
 
 i:hover {
@@ -347,6 +359,8 @@ i:hover {
     background-color: white;
     padding: 0.2rem;
 }
+
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
@@ -365,7 +379,7 @@ i:hover {
         left: 0;
         z-index: 1030;
     }
-
+   
     .header-container {
         padding-top: 164px;
     }
@@ -389,9 +403,9 @@ i:hover {
     }
 
     .nav-link {
-        padding: 0.15rem;
+        padding: 0.10rem;
     }
-
+   
     .nav-link i.fa-lg {
         font-size: 1rem;
     }

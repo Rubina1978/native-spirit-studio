@@ -257,19 +257,6 @@ Use this section to list any known issues you ran into while writing your Python
 
 ## Bugs
 
-⚠️ INSTRUCTIONS ⚠️
-
-Nobody likes bugs,... except the assessors! Projects seem more suspicious if a student doesn't properly track their bugs. If you're about to submit your project without any bugs listed below, you should ask yourself why you're doing this course in the first place, if you're able to build this entire application without running into any bugs. The best thing you can do for any project is to document your bugs! Not only does it show the true stages of development, but think of it as breadcrumbs for yourself in the future, should you encounter the same/similar bug again, it acts as a gentle reminder on what you did to fix the bug.
-
-If/when you encounter bugs during the development stages of your project, you should document them here, ideally with a screenshot explaining what the issue was, and what you did to fix the bug.
-
-Alternatively, an improved way to manage bugs is to use the built-in **[Issues](https://www.github.com/Rubina1978/native-spirit-studio/issues)** tracker on your GitHub repository. This can be found at the top of your repository, the tab called "Issues".
-
-If using the Issues tracker for bug management, you can simplify the documentation process for testing. Issues allow you to directly paste screenshots into the issue page without having to first save the screenshot locally. You can add labels to your issues (e.g. `bug`), assign yourself as the owner, and add comments/updates as you progress with fixing the issue(s). Once you've solved the issue/bug, you should then "Close" it.
-
-When showcasing your bug tracking for assessment, you can use the following examples below.
-
-⚠️ --- END --- ⚠️
 
 ### Fixed Bugs
 
@@ -300,7 +287,7 @@ Any remaining open issues can be tracked [here](https://www.github.com/Rubina197
 | With a known order-number, users can brute-force "checkout_success.html" and see potentially sensitive information. | ![screenshot](documentation/defensive-programing/order-number-and-confirmation.png) |
 | If a product is in your bag, but then gets deleted from the database, it throws errors from the session storage memory. | ![screenshot](documentation/issues/session-storage.png) |
 | The `-`/`+` quantity buttons work well on "product_details.html", but not on "bag.html". | ![screenshot](documentation/known-error.png) |
-| The email verification feature provided by Django Allauth is currently disabled in production. During deployment, a compatibility issue was identified between the project's dependency versions (Django 3.2 and Django Allauth 0.50.0) and the Python runtime used by Heroku, causing email verification requests to fail when attempting to send confirmation emails. | ![screenshot]N/A |
+| The functuality of email (including account verification and order confirmation emails) is currently disabled in production due to a compatibility issue between the project's dependencies and the Heroku runtime. Core functionality remains unaffected, and email support will be restored by upgrading project dependencies in a future update. | ![screenshot]N/A |
 | Products with size variants display and function correctly throughout the store, including basket and checkout functionality. However, size variants cannot currently be created through the custom Product Management interface and must be added through the Django admin panel. Due time constrains this could not be resolved and has been identified as a future enhancement. | ![screenshot](documentation/features/product-management.png)
 
 

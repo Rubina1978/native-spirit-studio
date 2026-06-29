@@ -1,13 +1,24 @@
-html {
-    height: 100%;
+html, body {
+    min-height: 100vh;
 }
-
+ .lost{
+    max-width: 100%;
+    height: auto;
+    max-height: 400px;
+ }
+ 
 body {
     background: url("/static/images/spiritual-wolf.e8bc9474844d.png") no-repeat center center fixed;
     background-size: cover;
     height:calc(100vh - 164px);
     color: #181010;
     font-family: 'Lato', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
 }
 .hero-text {
     color: #fff;
@@ -20,8 +31,6 @@ p {
     color: black;
 }
 
-
-
 /* from Bulma */
 .icon {
     align-items: center;
@@ -30,7 +39,9 @@ p {
     height: 1.5rem;
     width: 1.5rem;
 }
-
+h1 {
+    font-size: 1.5rem;
+}
 .logo-font {
     text-transform: uppercase;
 }
@@ -39,6 +50,14 @@ p {
     width: fit-content;
 }
 
+.deal {
+    font-size: 1.1rem;
+}
+
+.hero {
+    position:relative;
+   
+}
 /*chatgpt help withsolution*/
 .hero::before {
     content: "";
@@ -47,11 +66,13 @@ p {
     background:
         linear-gradient(
             to right,
-            rgba(0,0,0,0.75) 0%,
-            rgba(0,0,0,0.45) 40%,
-            rgba(0,0,0,0.15) 100%
+            rgba(0,0,0,0.80) 0%,
+            rgba(0,0,0,0.50) 40%,
+            rgba(0,0,0,0.20) 100%
         );
+        
 }
+
 
 .shop-now-button {
     background: #e4ce97;
@@ -123,13 +144,15 @@ a.category-badge > span.badge:hover {
 }
 
 .btt-button {
-    height: 30px;
-    width: 30px;
+    height: 42px;
+    width: 42px;
     position: fixed;
     bottom: 10px;
     right: 10px;
     
 }
+
+
 
 .btt-link,
 .update-link,
@@ -146,7 +169,7 @@ a.category-badge > span.badge:hover {
 input[name='q']::placeholder {
     color: #aab7c4;
 }
-
+/* toasts*/
 .message-container{
     position: fixed;
     top: 72px;
@@ -301,7 +324,13 @@ input[name='q']::placeholder {
 
 footer {
     background-color: #000000cb;
+    bottom: 0;
+    width: 100%;
+    
+   
+    
 }
+
 
 footer p {
     line-height: 1.4rem;
@@ -320,7 +349,9 @@ footer a:hover {
 footer a:focus,
 footer a:active {
     background-color: #b4b6b6 !important;
-    color: #000
+    color: #000;
+   
+    
 }
 
 i:hover {
@@ -328,6 +359,8 @@ i:hover {
     background-color: white;
     padding: 0.2rem;
 }
+
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
@@ -346,20 +379,60 @@ i:hover {
         left: 0;
         z-index: 1030;
     }
-
+   
     .header-container {
         padding-top: 164px;
     }
 }
 
 /* pad the top when navbar is collapsed on mobile*/
-@media (max-width: 991px){
-    .header-container{
+@media (max-width: 991px) {
+    .header-container {
         padding-top: 116px;
     }
 
     body {
-        height:calc(100vh - 116px);
+        height: calc(100vh - 116px);
     }
-}
+    .hero-text{
+        font-size: 2rem;
+    }
 
+    .display-4.logo-font.text-black {
+        font-size: 2rem;
+    }
+
+    .nav-link {
+        padding: 0.10rem;
+    }
+   
+    .nav-link i.fa-lg {
+        font-size: 1rem;
+    }
+
+    .navbar-toggler {
+        padding: .6rem .6rem;
+        font-size: 1rem;
+    }
+
+    #delivery-banner h4 {
+        font-size: .9rem;
+    }
+
+    .btn.btn-outline-black.rounded-0,
+    .btn.btn-black.rounded-0 {
+        padding: .375rem .375rem;
+    }
+
+    .btn.btn-outline-black.rounded-0.btn-lg,
+    .btn.btn-black.rounded-0.btn-lg {
+        padding: .375rem .375rem;
+        font-size: .75rem;
+    }
+
+    .increment-qty, .decrement-qty {
+        padding: .25rem .5rem !important;
+    }
+
+  
+}
