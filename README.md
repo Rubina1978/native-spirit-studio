@@ -766,6 +766,7 @@ There are no remaining major differences between the local version when compared
 | [favicon.io](https://favicon.io) | Generating the favicon |
 | [Font Awesome](https://fontawesome.com) | Icons used throughout the site |
 | [Pixabay](https://pixabay.com/vectors/signpost-direction-choice-decision-2009312/) | 404 page image |
+| [Pixabay](https://pixabay.com/vectors/ai-generated-lotus-flower-plant-9025766/) | lotus for favicon
 | [Canva](https://canva.link/o2hicsh64mpbmf9) | for creating wireframes and AI generated images for product listing |
 
 
