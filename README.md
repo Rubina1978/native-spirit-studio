@@ -155,10 +155,13 @@ I've used [Canva](https://canva.link/o2hicsh64mpbmf9) to design my site wirefram
 | As a customer | I would like get real time confirmation of payment | so that I can have a record of my transaction and order details. |
 | As a customer | I would like to securely enter my card details using Stripe at checkout | so that I can confidently provide the information needed to make a purchase. |
 | As a returning customer | I would like have personal profile | keep track of my purchases and add my payment details
-
-## Acceptance Criteria 
 | As a returning customer | I would like the checkout process to remember my shipping address | so that future purchases are quicker and easier. |
-| As a site owner | I would like add new products with a name, description, size(if applicable) price, images, and category | so that I can keep the store up to date. |
+
+## Acceptance Criteria of Site Owner
+
+| Target | Expectations | Outcome |
+| --- | --- | --- |
+| As a site owner | I would like add new products with a name, description, size (if applicable) price, images, and category | so that I can keep the store up to date. |
 | As a site owner | I would like to update product details (name, price, size(if applicable), description, image, category) at any time | so that I can keep the store up to date. |
 | As a site owner | I would like to delete products that are no longer available or relevant | so that I can keep the store up to date. |
 | As a site owner | I would like to see all orders made on the website | so that I can track track customers purchases. |
@@ -275,7 +278,7 @@ Native spirit studio contains the following custom made models:
 
 ### Reflection(Journal) model
 
-The Reflection model stores journal entries created by registered users. The relationship between User and Reflection is one-to-many, meaning one user can create multiple reflections while each reflection belongs to only one user. 
+The Reflection is located in Journal App. The model stores journal entries created by registered users. The relationship between User and Reflection is one-to-many, meaning one user can create multiple reflections while each reflection belongs to only one user. 
 
 Reflection model contains:
 
@@ -291,7 +294,7 @@ The user field is configured with on_delete=models.CASCADE, meaning that if a us
 
 ### ProductSize model
 
-The ProductSize model was introduced to support products that are available in multiple sizes with different pricing, such as blankets and rugs. Products that do not require size variants remain unaffected by this functionality.
+The ProductSize model is located in Products App and was introduced to support products that are available in multiple sizes with different pricing, such as blankets and rugs. Products that do not require size variants remain unaffected by this functionality.
 
 This approach allows products requiring size variants to store separate size, price, and stock information while maintaining a clean database structure.
 
@@ -473,6 +476,8 @@ I've decomposed my Epics into User Stories for prioritizing and implementing the
 - **Won't Have**: not a priority for this iteration - future features
 
 ## Testing
+
+The Journal app includes unit tests covering the core reflection functionality. Additional features, including checkout, Stripe integration, and product management, were verified through manual testing due to their reliance on external services and user interaction.
 
 > [!NOTE]  
 > For all testing, please refer to the [TESTING.md](TESTING.md) file.

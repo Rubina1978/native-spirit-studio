@@ -200,7 +200,7 @@ Defensive programming was manually tested with the below user acceptance testing
 | As a shopper | I would like to adjust the quantity of items in my shopping bag | so that I can modify my purchase preferences without leaving the cart. | ![screenshot](documentation/defensive-programing/view-and-update-shoppingbag-def-prog.png) |
 | As a shopper | I would like to remove items from my shopping bag | so that I can remove products I no longer wish to buy. | ![screenshot](documentation/features/remove-item-from-bag.png) |
 | As a shopper | I would like to proceed to checkout where I see my my items in my shopping bag, grand total, and input my name, email, shipping address, and card details | so that I can complete my purchase. | ![screenshot](documentation/features/checkout.png) |
-| As a shopper | I would like to receive a confirmation email after my purchase | so that I can have a record of my transaction and order details. | ![screenshot](documentation/defensive-programing/email-confirmation-def-prog.png) |
+| As a shopper | I would like to receive a confirmation email after my purchase | so that I can have a record of my transaction and order details. | ![screenshot](documentation/defensive-programing/purchase-confirmation-email.png) |
 | As a shopper | I would like to see an order confirmation page with a checkout order number after completing my purchase | so that I know my order has been successfully placed. | ![screenshot](documentation/features/order-confirmation.png) |
 | As a shopper | I would like to securely enter my card details using Stripe at checkout | so that I can feel confident my payment information is protected. | ![screenshot](documentation/features/adding-card-for-secure-payment.png) |
 | As a returning customer | I would like to be able to log in and view my past orders | so that I can track my previous purchases and order history. | ![screenshot](documentation/features/order-history.png) |
@@ -214,24 +214,26 @@ Defensive programming was manually tested with the below user acceptance testing
 
 ## Automated Testing
 
-I have conducted a series of automated tests on my application.
+Automated unit tests were carried out on the Journal application.
+
+**the test covers:**
+
+- Access to the Journal page for authenticated users
+- Reflection functionality
+- User-specific reflection access
+
 
 > [!NOTE]  
 > I fully acknowledge and understand that, in a real-world scenario, an extensive set of additional tests would be more comprehensive.
 
 ### Python (Unit Testing)
 
-⚠️ INSTRUCTIONS ⚠️
 
-Adjust the code below (file names, function names, etc.) to match your own project files/folders. Use these notes loosely when documenting your own Python Unit tests, and remove/adjust where applicable.
+I have used Django's built-in unit testing framework to test the application functionality. In order to run the tests, I ran the following command in the terminal on Journal app where I wrote test to indicate functionality:
 
-⚠️ SAMPLE ⚠️
+- `python3 manage.py test journal`
 
-I have used Django's built-in unit testing framework to test the application functionality. In order to run the tests, I ran the following command in the terminal each time:
-
-- `python3 manage.py test name-of-app`
-
-To create the coverage report, I would then run the following commands:
+To create the coverage report on whole, I would then run the following commands:
 
 - `pip3 install coverage`
 - `pip3 freeze --local > requirements.txt`
@@ -245,15 +247,15 @@ To see the HTML version of the reports, and find out whether some pieces of code
 
 Below are the results from the full coverage report on my application that I've tested:
 
-![screenshot](documentation/automation/html-coverage.png)
+| Coverage | ![screenshot](documentation/python_automated_testing/unit-testing.png) |
+| Coverage Continue | ![screenshot](documentation/python_automated_testing/unit-testing-cont.png) |
+| Journal Testing | ![screenshot](documentation/python_automated_testing/testing-journal.png) |
 
-#### Unit Test Issues
+### Unit Test Issues
 
-⚠️ INSTRUCTIONS ⚠️
-
-Use this section to list any known issues you ran into while writing your Python unit tests. Remember to include screenshots (where possible), and a solution to the issue (if known). This can be used for both "fixed" and "unresolved" issues. Remove this sub-section entirely if you somehow didn't run into any issues while working with your tests.
-
-⚠️ --- END --- ⚠️
+- Unit tests were created for the Journal app only.
+- Not all application views are covered by automated tests.
+- Stripe checkout, webhooks, and email functionality were tested manually rather than through unit tests due to their reliance on external services.
 
 ## Bugs
 
